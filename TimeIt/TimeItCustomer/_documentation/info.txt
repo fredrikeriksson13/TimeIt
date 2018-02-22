@@ -1,0 +1,89 @@
+﻿@Exception  i timeeit web om man inte valt prisstauts
+@Visa ActicityID (som info för referenser till andra system, uppföljning m.m)
+@Activity: RootID sätts inte. Måste alltid sättas, samma som sig själv om det är en topp/parent
+@TimeClassification sätts inte
+Fel status på topprojekt. ska vara 3 inte 7
+@Hantera frånvaro som activityPriceStatus
+[Feature]
+@Kunna lägga till personkopplingar (users)
+Kolla av mot förändringar i TimeIT statusar.
+
+
+    Public Enum activityStatus
+        aktivt = 1
+        okToAttest = 2
+        okToTidredovisa = 4
+        avslutat = 64
+        projectPlanning = 128
+        activityDone = 256
+
+    End Enum
+
+    Public Enum activityPriceStatus
+        lopandeTimpris = 1
+        fastPris = 2
+        avtalsfakturering = 4
+        timbank = 8
+        ejDeb = 16
+        interntProj = 32
+        arv = 128
+        'enableProjekt = 256 - obsolete
+        'onlyEjdeb = 512- obsolete
+        absence = 1024
+        'disableAvtal = 2048 - obsolete
+    End Enum
+
+    Public Enum tStatus
+        tid = 1
+        utlagg = 2
+        privat = 4
+        fastpris = 8
+        ingariFast = 16
+        mertid = 32
+        lock = 64
+        attesterad = 128
+        overtid1 = 256
+        overtid2 = 512
+        attestSaved = 1024
+        ProjektOK = 2048
+        Redigerad = 4096
+        LockWeek = 8192
+        restid = 16384
+    End Enum
+    Public Enum timeCodeStatus
+        narvarande = 1
+        deb = 2
+        ejDeb = 4
+        franvaro = 8
+        projekt = 16
+        avtal = 32
+    End Enum
+
+    ''' <summary>
+    ''' Standard Codes. Are stored in the db, but these 3 are structural and will not change
+    ''' </summary>
+    Public Enum timeCodes
+        debiterbar = 1
+        avtal = 2
+        projekt = 3
+        ejDeb = 4
+
+    End Enum
+
+    Public Enum userPermission
+        admin = 1
+        user = 2
+        attest = 4
+    End Enum
+
+    Public Enum projectType
+        projekt = 1
+        uppdrag = 2
+        aktivitet = 3
+    End Enum
+
+    Public Enum UserFlex
+        Signed = 1 'not set but maybe should be(?)
+        Attested = 2
+        Printed = 4
+    End Enum

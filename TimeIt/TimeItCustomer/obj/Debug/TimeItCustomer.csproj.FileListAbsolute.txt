@@ -1,0 +1,370 @@
+C:\Users\java\Desktop\TimeItCustomer\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.Form1.resources
+C:\Users\java\Desktop\TimeItCustomer\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.Properties.Resources.resources
+C:\Users\java\Desktop\TimeItCustomer\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.csproj.GenerateResource.Cache
+C:\Users\java\Desktop\TimeItCustomer\TimeItCustomer\TimeItCustomer\bin\Debug\TimeItCustomer.exe.config
+C:\Users\java\Desktop\TimeItCustomer\TimeItCustomer\TimeItCustomer\bin\Debug\TimeItCustomer.exe
+C:\Users\java\Desktop\TimeItCustomer\TimeItCustomer\TimeItCustomer\bin\Debug\TimeItCustomer.pdb
+C:\Users\java\Desktop\TimeItCustomer\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.exe
+C:\Users\java\Desktop\TimeItCustomer\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.pdb
+C:\Users\java\Desktop\TimeItCustomer\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.ContactDialog.resources
+D:\TimeItCustomer\TimeItCustomer\TimeItCustomer\bin\Debug\TimeItCustomer.exe.config
+D:\TimeItCustomer\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.exe
+D:\TimeItCustomer\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.pdb
+C:\Users\java\Desktop\TimeItCustomer 12 Treeview Load child, Treeview click event\TimeItCustomer\TimeItCustomer\bin\Debug\TimeItCustomer.exe.config
+C:\Users\java\Desktop\TimeItCustomer 12 Treeview Load child, Treeview click event\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.exe
+C:\Users\java\Desktop\TimeItCustomer 12 Treeview Load child, Treeview click event\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.pdb
+C:\Users\java\Desktop\TimeItCustomer 12 Treeview Load child, Treeview click event\TimeItCustomer\TimeItCustomer\bin\Debug\TimeItCustomer.exe
+C:\Users\java\Desktop\TimeItCustomer 12 Treeview Load child, Treeview click event\TimeItCustomer\TimeItCustomer\bin\Debug\TimeItCustomer.pdb
+C:\Users\java\Desktop\TimeItCustomer 12 Treeview Load child, Treeview click event\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.ContactDialog.resources
+C:\Users\java\Desktop\TimeItCustomer 12 Treeview Load child, Treeview click event\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.Form1.resources
+C:\Users\java\Desktop\TimeItCustomer 12 Treeview Load child, Treeview click event\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.Properties.Resources.resources
+C:\Users\java\Desktop\TimeItCustomer 12 Treeview Load child, Treeview click event\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.csproj.GenerateResource.Cache
+C:\Users\java\Desktop\TimeItCustomer 12 Treeview Load child, Treeview click event\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.csprojResolveAssemblyReference.cache
+C:\Users\java\Desktop\TimeItCustomer Senaste\TimeItCustomer\TimeItCustomer\bin\Debug\TimeItCustomer.exe.config
+C:\Users\java\Desktop\TimeItCustomer Senaste\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.exe
+C:\Users\java\Desktop\TimeItCustomer Senaste\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.pdb
+C:\Users\java\Desktop\TimeItCustomer Senaste\TimeItCustomer\TimeItCustomer\bin\Debug\TimeItCustomer.exe
+C:\Users\java\Desktop\TimeItCustomer Senaste\TimeItCustomer\TimeItCustomer\bin\Debug\TimeItCustomer.pdb
+C:\Users\java\Desktop\TimeItCustomer Senaste\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.csprojResolveAssemblyReference.cache
+C:\Users\java\Desktop\TimeItCustomer Senaste\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.ContactDialog.resources
+C:\Users\java\Desktop\TimeItCustomer Senaste\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.Form1.resources
+C:\Users\java\Desktop\TimeItCustomer Senaste\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.Properties.Resources.resources
+C:\Users\java\Desktop\TimeItCustomer Senaste\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.csproj.GenerateResource.Cache
+C:\Users\java\Desktop\TimeItCustomer 13 UserName, changeByID\TimeItCustomer\TimeItCustomer\bin\Debug\TimeItCustomer.exe.config
+C:\Users\java\Desktop\TimeItCustomer 13 UserName, changeByID\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.exe
+C:\Users\java\Desktop\TimeItCustomer 13 UserName, changeByID\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.pdb
+C:\Users\java\Desktop\TimeItCustomer 13 UserName, changeByID\TimeItCustomer\TimeItCustomer\bin\Debug\TimeItCustomer.exe
+C:\Users\java\Desktop\TimeItCustomer 13 UserName, changeByID\TimeItCustomer\TimeItCustomer\bin\Debug\TimeItCustomer.pdb
+C:\Users\java\Desktop\TimeItCustomer 13 UserName, changeByID\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.csprojResolveAssemblyReference.cache
+C:\Users\java\Desktop\TimeItCustomer 13 UserName, changeByID\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.ContactDialog.resources
+C:\Users\java\Desktop\TimeItCustomer 13 UserName, changeByID\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.Form1.resources
+C:\Users\java\Desktop\TimeItCustomer 13 UserName, changeByID\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.Properties.Resources.resources
+C:\Users\java\Desktop\TimeItCustomer 13 UserName, changeByID\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.csproj.GenerateResource.Cache
+C:\Users\java\Desktop\TimeItCustomer\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.csprojResolveAssemblyReference.cache
+C:\Users\java\Desktop\TimeItCustomer 15 Ref Projekt Combobox\TimeItCustomer\TimeItCustomer\bin\Debug\TimeItCustomer.exe.config
+C:\Users\java\Desktop\TimeItCustomer 15 Ref Projekt Combobox\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.exe
+C:\Users\java\Desktop\TimeItCustomer 15 Ref Projekt Combobox\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.pdb
+C:\Users\java\Desktop\TimeItCustomer 15 Ref Projekt Combobox\TimeItCustomer\TimeItCustomer\bin\Debug\TimeItCustomer.exe
+C:\Users\java\Desktop\TimeItCustomer 15 Ref Projekt Combobox\TimeItCustomer\TimeItCustomer\bin\Debug\TimeItCustomer.pdb
+C:\Users\java\Desktop\TimeItCustomer 15 Ref Projekt Combobox\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.ContactDialog.resources
+C:\Users\java\Desktop\TimeItCustomer 15 Ref Projekt Combobox\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.Form1.resources
+C:\Users\java\Desktop\TimeItCustomer 15 Ref Projekt Combobox\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.Properties.Resources.resources
+C:\Users\java\Desktop\TimeItCustomer 15 Ref Projekt Combobox\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.csproj.GenerateResource.Cache
+C:\Users\java\Desktop\TimeItCustomer 15 Ref Projekt Combobox\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.csprojResolveAssemblyReference.cache
+C:\Users\java\Desktop\TimeItCustomer 16 ComboBox Attest\TimeItCustomer\TimeItCustomer\bin\Debug\TimeItCustomer.exe.config
+C:\Users\java\Desktop\TimeItCustomer 16 ComboBox Attest\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.exe
+C:\Users\java\Desktop\TimeItCustomer 16 ComboBox Attest\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.pdb
+C:\Users\java\Desktop\TimeItCustomer 16 ComboBox Attest\TimeItCustomer\TimeItCustomer\bin\Debug\TimeItCustomer.exe
+C:\Users\java\Desktop\TimeItCustomer 16 ComboBox Attest\TimeItCustomer\TimeItCustomer\bin\Debug\TimeItCustomer.pdb
+C:\Users\java\Desktop\TimeItCustomer 16 ComboBox Attest\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.csprojResolveAssemblyReference.cache
+C:\Users\java\Desktop\TimeItCustomer 16 ComboBox Attest\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.ContactDialog.resources
+C:\Users\java\Desktop\TimeItCustomer 16 ComboBox Attest\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.Form1.resources
+C:\Users\java\Desktop\TimeItCustomer 16 ComboBox Attest\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.Properties.Resources.resources
+C:\Users\java\Desktop\TimeItCustomer 16 ComboBox Attest\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.csproj.GenerateResource.Cache
+C:\Users\java\Desktop\TimeItCustomer 17 merge\TimeItCustomer\TimeItCustomer\bin\Debug\TimeItCustomer.exe.config
+C:\Users\java\Desktop\TimeItCustomer 17 merge\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.exe
+C:\Users\java\Desktop\TimeItCustomer 17 merge\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.pdb
+C:\Users\java\Desktop\TimeItCustomer 17 merge\TimeItCustomer\TimeItCustomer\bin\Debug\TimeItCustomer.exe
+C:\Users\java\Desktop\TimeItCustomer 17 merge\TimeItCustomer\TimeItCustomer\bin\Debug\TimeItCustomer.pdb
+C:\Users\java\Desktop\TimeItCustomer 17 merge\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.ContactDialog.resources
+C:\Users\java\Desktop\TimeItCustomer 17 merge\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.Form1.resources
+C:\Users\java\Desktop\TimeItCustomer 17 merge\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.Properties.Resources.resources
+C:\Users\java\Desktop\TimeItCustomer 17 merge\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.csproj.GenerateResource.Cache
+C:\Users\java\Desktop\TimeItCustomer senast\TimeItCustomer\TimeItCustomer\bin\Debug\TimeItCustomer.exe.config
+C:\Users\java\Desktop\TimeItCustomer senast\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.exe
+C:\Users\java\Desktop\TimeItCustomer senast\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.pdb
+C:\Users\java\Desktop\TimeItCustomer senast\TimeItCustomer\TimeItCustomer\bin\Debug\TimeItCustomer.exe
+C:\Users\java\Desktop\TimeItCustomer senast\TimeItCustomer\TimeItCustomer\bin\Debug\TimeItCustomer.pdb
+C:\Users\java\Desktop\TimeItCustomer senast\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.ContactDialog.resources
+C:\Users\java\Desktop\TimeItCustomer senast\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.Form1.resources
+C:\Users\java\Desktop\TimeItCustomer senast\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.Properties.Resources.resources
+C:\Users\java\Desktop\TimeItCustomer senast\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.csproj.GenerateResource.Cache
+C:\Users\java\Desktop\TimeItCustomer 23 Add child type checker\TimeItCustomer\TimeItCustomer\bin\Debug\TimeItCustomer.exe.config
+C:\Users\java\Desktop\TimeItCustomer 23 Add child type checker\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.exe
+C:\Users\java\Desktop\TimeItCustomer 23 Add child type checker\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.pdb
+C:\Users\java\Desktop\TimeItCustomer 23 Add child type checker\TimeItCustomer\TimeItCustomer\bin\Debug\TimeItCustomer.exe
+C:\Users\java\Desktop\TimeItCustomer 23 Add child type checker\TimeItCustomer\TimeItCustomer\bin\Debug\TimeItCustomer.pdb
+C:\Users\java\Desktop\TimeItCustomer 23 Add child type checker\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.csprojResolveAssemblyReference.cache
+C:\Users\java\Desktop\TimeItCustomer 23 Add child type checker\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.ContactDialog.resources
+C:\Users\java\Desktop\TimeItCustomer 23 Add child type checker\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.Form1.resources
+C:\Users\java\Desktop\TimeItCustomer 23 Add child type checker\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.Properties.Resources.resources
+C:\Users\java\Desktop\TimeItCustomer 23 Add child type checker\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.csproj.GenerateResource.Cache
+C:\Users\java\Desktop\TimeItCustomer 24 icon, safe\TimeItCustomer\TimeItCustomer\bin\Debug\TimeItCustomer.exe.config
+C:\Users\java\Desktop\TimeItCustomer 24 icon, safe\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.exe
+C:\Users\java\Desktop\TimeItCustomer 24 icon, safe\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.pdb
+C:\Users\java\Desktop\TimeItCustomer 24 icon, safe\TimeItCustomer\TimeItCustomer\bin\Debug\TimeItCustomer.exe
+C:\Users\java\Desktop\TimeItCustomer 24 icon, safe\TimeItCustomer\TimeItCustomer\bin\Debug\TimeItCustomer.pdb
+C:\Users\java\Desktop\TimeItCustomer 24 icon, safe\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.ContactDialog.resources
+C:\Users\java\Desktop\TimeItCustomer 24 icon, safe\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.Form1.resources
+C:\Users\java\Desktop\TimeItCustomer 24 icon, safe\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.Properties.Resources.resources
+C:\Users\java\Desktop\TimeItCustomer 24 icon, safe\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.csproj.GenerateResource.Cache
+C:\Users\java\Desktop\TimeItCustomer 25 TaskManager\TimeItCustomer\TimeItCustomer\bin\Debug\TimeItCustomer.exe.config
+C:\Users\java\Desktop\TimeItCustomer 25 TaskManager\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.exe
+C:\Users\java\Desktop\TimeItCustomer 25 TaskManager\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.pdb
+C:\Users\java\Desktop\TimeItCustomer 25 TaskManager\TimeItCustomer\TimeItCustomer\bin\Debug\TimeItCustomer.exe
+C:\Users\java\Desktop\TimeItCustomer 25 TaskManager\TimeItCustomer\TimeItCustomer\bin\Debug\TimeItCustomer.pdb
+C:\Users\java\Desktop\TimeItCustomer 25 TaskManager\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.csprojResolveAssemblyReference.cache
+C:\Users\java\Desktop\TimeItCustomer 25 TaskManager\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.ContactDialog.resources
+C:\Users\java\Desktop\TimeItCustomer 25 TaskManager\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.Form1.resources
+C:\Users\java\Desktop\TimeItCustomer 25 TaskManager\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.Properties.Resources.resources
+C:\Users\java\Desktop\TimeItCustomer 25 TaskManager\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.csproj.GenerateResource.Cache
+C:\Users\java\Desktop\TimeItCustomer 26 Task\TimeItCustomer\TimeItCustomer\bin\Debug\TimeItCustomer.exe.config
+C:\Users\java\Desktop\TimeItCustomer 26 Task\TimeItCustomer\TimeItCustomer\bin\Debug\TimeItCustomer.exe
+C:\Users\java\Desktop\TimeItCustomer 26 Task\TimeItCustomer\TimeItCustomer\bin\Debug\TimeItCustomer.pdb
+C:\Users\java\Desktop\TimeItCustomer 26 Task\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.ContactDialog.resources
+C:\Users\java\Desktop\TimeItCustomer 26 Task\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.Form1.resources
+C:\Users\java\Desktop\TimeItCustomer 26 Task\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.Properties.Resources.resources
+C:\Users\java\Desktop\TimeItCustomer 26 Task\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.csproj.GenerateResource.Cache
+C:\Users\java\Desktop\TimeItCustomer 26 Task\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.exe
+C:\Users\java\Desktop\TimeItCustomer 26 Task\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.pdb
+C:\Users\java\Desktop\TimeItCustomer 27 design\TimeItCustomer\TimeItCustomer\bin\Debug\TimeItCustomer.exe.config
+C:\Users\java\Desktop\TimeItCustomer 27 design\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.exe
+C:\Users\java\Desktop\TimeItCustomer 27 design\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.pdb
+C:\Users\java\Desktop\TimeItCustomer 27 design\TimeItCustomer\TimeItCustomer\bin\Debug\TimeItCustomer.exe
+C:\Users\java\Desktop\TimeItCustomer 27 design\TimeItCustomer\TimeItCustomer\bin\Debug\TimeItCustomer.pdb
+C:\Users\java\Desktop\TimeItCustomer 27 design\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.csprojResolveAssemblyReference.cache
+C:\Users\java\Desktop\TimeItCustomer 27 design\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.ContactDialog.resources
+C:\Users\java\Desktop\TimeItCustomer 27 design\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.Form1.resources
+C:\Users\java\Desktop\TimeItCustomer 27 design\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.Properties.Resources.resources
+C:\Users\java\Desktop\TimeItCustomer 27 design\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.csproj.GenerateResource.Cache
+C:\Users\java\Desktop\TimeItCustomer 28 design\TimeItCustomer\TimeItCustomer\bin\Debug\TimeItCustomer.exe.config
+C:\Users\java\Desktop\TimeItCustomer 28 design\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.exe
+C:\Users\java\Desktop\TimeItCustomer 28 design\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.pdb
+C:\Users\java\Desktop\TimeItCustomer 28 design\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.ContactDialog.resources
+C:\Users\java\Desktop\TimeItCustomer 28 design\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.Form1.resources
+C:\Users\java\Desktop\TimeItCustomer 28 design\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.Properties.Resources.resources
+C:\Users\java\Desktop\TimeItCustomer 28 design\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.csproj.GenerateResource.Cache
+C:\Users\java\Desktop\TimeItCustomer 28 design\TimeItCustomer\TimeItCustomer\bin\Debug\TimeItCustomer.exe
+C:\Users\java\Desktop\TimeItCustomer 28 design\TimeItCustomer\TimeItCustomer\bin\Debug\TimeItCustomer.pdb
+C:\Users\java\Desktop\TimeItCustomer 28 design\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.TaskWindow.resources
+C:\Users\java\Desktop\TimeItCustomer 28 design\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.csprojResolveAssemblyReference.cache
+C:\Users\java\Desktop\TimeItCustomer 29 design fredag\TimeItCustomer\TimeItCustomer\bin\Debug\TimeItCustomer.exe.config
+C:\Users\java\Desktop\TimeItCustomer 29 design fredag\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.exe
+C:\Users\java\Desktop\TimeItCustomer 29 design fredag\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.pdb
+C:\Users\java\Desktop\TimeItCustomer 29 design fredag\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.ContactDialog.resources
+C:\Users\java\Desktop\TimeItCustomer 29 design fredag\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.Form1.resources
+C:\Users\java\Desktop\TimeItCustomer 29 design fredag\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.Properties.Resources.resources
+C:\Users\java\Desktop\TimeItCustomer 29 design fredag\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.TaskWindow.resources
+C:\Users\java\Desktop\TimeItCustomer 29 design fredag\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.csproj.GenerateResource.Cache
+C:\Users\java\Desktop\TimeItCustomer 29 design fredag\TimeItCustomer\TimeItCustomer\bin\Debug\TimeItCustomer.exe
+C:\Users\java\Desktop\TimeItCustomer 29 design fredag\TimeItCustomer\TimeItCustomer\bin\Debug\TimeItCustomer.pdb
+C:\Users\java\Desktop\TimeItCustomer 30 design merge tasks\TimeItCustomer\TimeItCustomer\bin\Debug\TimeItCustomer.exe.config
+C:\Users\java\Desktop\TimeItCustomer 30 design merge tasks\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.exe
+C:\Users\java\Desktop\TimeItCustomer 30 design merge tasks\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.pdb
+C:\Users\java\Desktop\TimeItCustomer 30 design merge tasks\TimeItCustomer\TimeItCustomer\bin\Debug\TimeItCustomer.exe
+C:\Users\java\Desktop\TimeItCustomer 30 design merge tasks\TimeItCustomer\TimeItCustomer\bin\Debug\TimeItCustomer.pdb
+C:\Users\java\Desktop\TimeItCustomer 30 design merge tasks\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.ContactDialog.resources
+C:\Users\java\Desktop\TimeItCustomer 30 design merge tasks\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.Form1.resources
+C:\Users\java\Desktop\TimeItCustomer 30 design merge tasks\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.Properties.Resources.resources
+C:\Users\java\Desktop\TimeItCustomer 30 design merge tasks\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.TaskWindow.resources
+C:\Users\java\Desktop\TimeItCustomer 30 design merge tasks\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.csproj.GenerateResource.Cache
+C:\Users\java\Desktop\TimeItCustomer 31 save task\TimeItCustomer\TimeItCustomer\bin\Debug\TimeItCustomer.exe.config
+C:\Users\java\Desktop\TimeItCustomer 31 save task\TimeItCustomer\TimeItCustomer\bin\Debug\TimeItCustomer.exe
+C:\Users\java\Desktop\TimeItCustomer 31 save task\TimeItCustomer\TimeItCustomer\bin\Debug\TimeItCustomer.pdb
+C:\Users\java\Desktop\TimeItCustomer 31 save task\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.csprojResolveAssemblyReference.cache
+C:\Users\java\Desktop\TimeItCustomer 31 save task\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.ContactDialog.resources
+C:\Users\java\Desktop\TimeItCustomer 31 save task\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.Form1.resources
+C:\Users\java\Desktop\TimeItCustomer 31 save task\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.Properties.Resources.resources
+C:\Users\java\Desktop\TimeItCustomer 31 save task\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.TaskWindow.resources
+C:\Users\java\Desktop\TimeItCustomer 31 save task\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.csproj.GenerateResource.Cache
+C:\Users\java\Desktop\TimeItCustomer 31 save task\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.exe
+C:\Users\java\Desktop\TimeItCustomer 31 save task\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.pdb
+C:\Users\java\Desktop\TimeItCustomer 32 design\TimeItCustomer\TimeItCustomer\bin\Debug\TimeItCustomer.exe.config
+C:\Users\java\Desktop\TimeItCustomer 32 design\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.exe
+C:\Users\java\Desktop\TimeItCustomer 32 design\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.pdb
+C:\Users\java\Desktop\TimeItCustomer 32 design\TimeItCustomer\TimeItCustomer\bin\Debug\TimeItCustomer.exe
+C:\Users\java\Desktop\TimeItCustomer 32 design\TimeItCustomer\TimeItCustomer\bin\Debug\TimeItCustomer.pdb
+C:\Users\java\Desktop\TimeItCustomer 32 design\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.csprojResolveAssemblyReference.cache
+C:\Users\java\Desktop\TimeItCustomer 32 design\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.ContactDialog.resources
+C:\Users\java\Desktop\TimeItCustomer 32 design\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.Form1.resources
+C:\Users\java\Desktop\TimeItCustomer 32 design\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.Properties.Resources.resources
+C:\Users\java\Desktop\TimeItCustomer 32 design\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.TaskWindow.resources
+C:\Users\java\Desktop\TimeItCustomer 32 design\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.csproj.GenerateResource.Cache
+C:\Users\java\Desktop\TimeItCustomer 33 customer order by , serarch label design\TimeItCustomer\TimeItCustomer\bin\Debug\TimeItCustomer.exe.config
+C:\Users\java\Desktop\TimeItCustomer 33 customer order by , serarch label design\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.exe
+C:\Users\java\Desktop\TimeItCustomer 33 customer order by , serarch label design\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.pdb
+C:\Users\java\Desktop\TimeItCustomer 33 customer order by , serarch label design\TimeItCustomer\TimeItCustomer\bin\Debug\TimeItCustomer.exe
+C:\Users\java\Desktop\TimeItCustomer 33 customer order by , serarch label design\TimeItCustomer\TimeItCustomer\bin\Debug\TimeItCustomer.pdb
+C:\Users\java\Desktop\TimeItCustomer 33 customer order by , serarch label design\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.csprojResolveAssemblyReference.cache
+C:\Users\java\Desktop\TimeItCustomer 33 customer order by , serarch label design\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.ContactDialog.resources
+C:\Users\java\Desktop\TimeItCustomer 33 customer order by , serarch label design\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.Form1.resources
+C:\Users\java\Desktop\TimeItCustomer 33 customer order by , serarch label design\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.Properties.Resources.resources
+C:\Users\java\Desktop\TimeItCustomer 33 customer order by , serarch label design\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.TaskWindow.resources
+C:\Users\java\Desktop\TimeItCustomer 33 customer order by , serarch label design\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.csproj.GenerateResource.Cache
+C:\Users\java\Desktop\TimeItCustomer 34 ContactWindow\TimeItCustomer\TimeItCustomer\bin\Debug\TimeItCustomer.exe.config
+C:\Users\java\Desktop\TimeItCustomer 34 ContactWindow\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.exe
+C:\Users\java\Desktop\TimeItCustomer 34 ContactWindow\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.pdb
+C:\Users\java\Desktop\TimeItCustomer 34 ContactWindow\TimeItCustomer\TimeItCustomer\bin\Debug\TimeItCustomer.exe
+C:\Users\java\Desktop\TimeItCustomer 34 ContactWindow\TimeItCustomer\TimeItCustomer\bin\Debug\TimeItCustomer.pdb
+C:\Users\java\Desktop\TimeItCustomer 34 ContactWindow\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.csprojResolveAssemblyReference.cache
+C:\Users\java\Desktop\TimeItCustomer 34 ContactWindow\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.ContactDialog.resources
+C:\Users\java\Desktop\TimeItCustomer 34 ContactWindow\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.Form1.resources
+C:\Users\java\Desktop\TimeItCustomer 34 ContactWindow\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.Properties.Resources.resources
+C:\Users\java\Desktop\TimeItCustomer 34 ContactWindow\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.TaskWindow.resources
+C:\Users\java\Desktop\TimeItCustomer 34 ContactWindow\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.csproj.GenerateResource.Cache
+C:\Users\java\Desktop\TimeItCustomer 35 task checkbox save\TimeItCustomer\TimeItCustomer\bin\Debug\TimeItCustomer.exe.config
+C:\Users\java\Desktop\TimeItCustomer 35 task checkbox save\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.exe
+C:\Users\java\Desktop\TimeItCustomer 35 task checkbox save\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.pdb
+C:\Users\java\Desktop\TimeItCustomer 35 task checkbox save\TimeItCustomer\TimeItCustomer\bin\Debug\TimeItCustomer.exe
+C:\Users\java\Desktop\TimeItCustomer 35 task checkbox save\TimeItCustomer\TimeItCustomer\bin\Debug\TimeItCustomer.pdb
+C:\Users\java\Desktop\TimeItCustomer 35 task checkbox save\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.ContactDialog.resources
+C:\Users\java\Desktop\TimeItCustomer 35 task checkbox save\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.Form1.resources
+C:\Users\java\Desktop\TimeItCustomer 35 task checkbox save\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.Properties.Resources.resources
+C:\Users\java\Desktop\TimeItCustomer 35 task checkbox save\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.TaskWindow.resources
+C:\Users\java\Desktop\TimeItCustomer 35 task checkbox save\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.csproj.GenerateResource.Cache
+C:\Users\java\Desktop\TimeItCustomer 35 task checkbox save\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.csprojResolveAssemblyReference.cache
+C:\Users\java\Desktop\TimeItCustomer 36 task checkbox dynamic\TimeItCustomer\TimeItCustomer\bin\Debug\TimeItCustomer.exe.config
+C:\Users\java\Desktop\TimeItCustomer 36 task checkbox dynamic\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.exe
+C:\Users\java\Desktop\TimeItCustomer 36 task checkbox dynamic\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.pdb
+C:\Users\java\Desktop\TimeItCustomer 36 task checkbox dynamic\TimeItCustomer\TimeItCustomer\bin\Debug\TimeItCustomer.exe
+C:\Users\java\Desktop\TimeItCustomer 36 task checkbox dynamic\TimeItCustomer\TimeItCustomer\bin\Debug\TimeItCustomer.pdb
+C:\Users\java\Desktop\TimeItCustomer 36 task checkbox dynamic\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.csprojResolveAssemblyReference.cache
+C:\Users\java\Desktop\TimeItCustomer 36 task checkbox dynamic\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.ContactDialog.resources
+C:\Users\java\Desktop\TimeItCustomer 36 task checkbox dynamic\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.Form1.resources
+C:\Users\java\Desktop\TimeItCustomer 36 task checkbox dynamic\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.Properties.Resources.resources
+C:\Users\java\Desktop\TimeItCustomer 36 task checkbox dynamic\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.TaskWindow.resources
+C:\Users\java\Desktop\TimeItCustomer 36 task checkbox dynamic\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.csproj.GenerateResource.Cache
+C:\Users\java\Desktop\TimeItCustomer 37 task checkbox dynamic\TimeItCustomer\TimeItCustomer\bin\Debug\TimeItCustomer.exe.config
+C:\Users\java\Desktop\TimeItCustomer 37 task checkbox dynamic\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.exe
+C:\Users\java\Desktop\TimeItCustomer 37 task checkbox dynamic\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.pdb
+C:\Users\java\Desktop\TimeItCustomer 37 task checkbox dynamic\TimeItCustomer\TimeItCustomer\bin\Debug\TimeItCustomer.exe
+C:\Users\java\Desktop\TimeItCustomer 37 task checkbox dynamic\TimeItCustomer\TimeItCustomer\bin\Debug\TimeItCustomer.pdb
+C:\Users\java\Desktop\TimeItCustomer 37 task checkbox dynamic\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.ContactDialog.resources
+C:\Users\java\Desktop\TimeItCustomer 37 task checkbox dynamic\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.Form1.resources
+C:\Users\java\Desktop\TimeItCustomer 37 task checkbox dynamic\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.Properties.Resources.resources
+C:\Users\java\Desktop\TimeItCustomer 37 task checkbox dynamic\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.TaskWindow.resources
+C:\Users\java\Desktop\TimeItCustomer 37 task checkbox dynamic\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.csproj.GenerateResource.Cache
+C:\Users\java\Desktop\TimeItCustomer 37 task checkbox dynamic\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.csprojResolveAssemblyReference.cache
+C:\Users\java\Desktop\TimeItCustomer 41\TimeItCustomer\TimeItCustomer\bin\Debug\TimeItCustomer.exe.config
+C:\Users\java\Desktop\TimeItCustomer 41\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.exe
+C:\Users\java\Desktop\TimeItCustomer 41\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.pdb
+C:\Users\java\Desktop\TimeItCustomer 41\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.ContactDialog.resources
+C:\Users\java\Desktop\TimeItCustomer 41\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.Form1.resources
+C:\Users\java\Desktop\TimeItCustomer 41\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.Properties.Resources.resources
+C:\Users\java\Desktop\TimeItCustomer 41\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.TaskWindow.resources
+C:\Users\java\Desktop\TimeItCustomer 41\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.csproj.GenerateResource.Cache
+C:\Users\java\Desktop\TimeItCustomer 41\TimeItCustomer\TimeItCustomer\bin\Debug\TimeItCustomer.exe
+C:\Users\java\Desktop\TimeItCustomer 41\TimeItCustomer\TimeItCustomer\bin\Debug\TimeItCustomer.pdb
+C:\Users\java\Desktop\TimeItCustomer 41\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.csprojResolveAssemblyReference.cache
+C:\Users\java\Desktop\TimeItCustomer 42\TimeItCustomer\TimeItCustomer\bin\Debug\TimeItCustomer.exe.config
+C:\Users\java\Desktop\TimeItCustomer 42\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.exe
+C:\Users\java\Desktop\TimeItCustomer 42\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.pdb
+C:\Users\java\Desktop\TimeItCustomer 42\TimeItCustomer\TimeItCustomer\bin\Debug\TimeItCustomer.exe
+C:\Users\java\Desktop\TimeItCustomer 42\TimeItCustomer\TimeItCustomer\bin\Debug\TimeItCustomer.pdb
+C:\Users\java\Desktop\TimeItCustomer 42\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.csprojResolveAssemblyReference.cache
+C:\Users\java\Desktop\TimeItCustomer 42\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.ContactDialog.resources
+C:\Users\java\Desktop\TimeItCustomer 42\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.Form1.resources
+C:\Users\java\Desktop\TimeItCustomer 42\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.Properties.Resources.resources
+C:\Users\java\Desktop\TimeItCustomer 42\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.TaskWindow.resources
+C:\Users\java\Desktop\TimeItCustomer 42\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.csproj.GenerateResource.Cache
+C:\Users\java\Desktop\TimeItCustomer 43 event task counter\TimeItCustomer\TimeItCustomer\bin\Debug\TimeItCustomer.exe.config
+C:\Users\java\Desktop\TimeItCustomer 43 event task counter\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.exe
+C:\Users\java\Desktop\TimeItCustomer 43 event task counter\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.pdb
+C:\Users\java\Desktop\TimeItCustomer 43 event task counter\TimeItCustomer\TimeItCustomer\bin\Debug\TimeItCustomer.exe
+C:\Users\java\Desktop\TimeItCustomer 43 event task counter\TimeItCustomer\TimeItCustomer\bin\Debug\TimeItCustomer.pdb
+C:\Users\java\Desktop\TimeItCustomer 43 event task counter\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.csprojResolveAssemblyReference.cache
+C:\Users\java\Desktop\TimeItCustomer 43 event task counter\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.ContactDialog.resources
+C:\Users\java\Desktop\TimeItCustomer 43 event task counter\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.Form1.resources
+C:\Users\java\Desktop\TimeItCustomer 43 event task counter\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.Properties.Resources.resources
+C:\Users\java\Desktop\TimeItCustomer 43 event task counter\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.TaskWindow.resources
+C:\Users\java\Desktop\TimeItCustomer 43 event task counter\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.csproj.GenerateResource.Cache
+C:\Users\java\Desktop\TimeItCustomer 44 buggfix\TimeItCustomer\TimeItCustomer\bin\Debug\TimeItCustomer.exe.config
+C:\Users\java\Desktop\TimeItCustomer 44 buggfix\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.exe
+C:\Users\java\Desktop\TimeItCustomer 44 buggfix\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.pdb
+C:\Users\java\Desktop\TimeItCustomer 44 buggfix\TimeItCustomer\TimeItCustomer\bin\Debug\TimeItCustomer.exe
+C:\Users\java\Desktop\TimeItCustomer 44 buggfix\TimeItCustomer\TimeItCustomer\bin\Debug\TimeItCustomer.pdb
+C:\Users\java\Desktop\TimeItCustomer 44 buggfix\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.csprojResolveAssemblyReference.cache
+C:\Users\java\Desktop\TimeItCustomer 44 buggfix\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.ContactDialog.resources
+C:\Users\java\Desktop\TimeItCustomer 44 buggfix\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.Form1.resources
+C:\Users\java\Desktop\TimeItCustomer 44 buggfix\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.Properties.Resources.resources
+C:\Users\java\Desktop\TimeItCustomer 44 buggfix\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.TaskWindow.resources
+C:\Users\java\Desktop\TimeItCustomer 44 buggfix\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.csproj.GenerateResource.Cache
+C:\Users\java\Desktop\TimeItCustomer 45 buggfix\TimeItCustomer\TimeItCustomer\bin\Debug\TimeItCustomer.exe.config
+C:\Users\java\Desktop\TimeItCustomer 45 buggfix\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.exe
+C:\Users\java\Desktop\TimeItCustomer 45 buggfix\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.pdb
+C:\Users\java\Desktop\TimeItCustomer 45 buggfix\TimeItCustomer\TimeItCustomer\bin\Debug\TimeItCustomer.exe
+C:\Users\java\Desktop\TimeItCustomer 45 buggfix\TimeItCustomer\TimeItCustomer\bin\Debug\TimeItCustomer.pdb
+C:\Users\java\Desktop\TimeItCustomer 45 buggfix\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.csprojResolveAssemblyReference.cache
+C:\Users\java\Desktop\TimeItCustomer 45 buggfix\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.ContactDialog.resources
+C:\Users\java\Desktop\TimeItCustomer 45 buggfix\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.Form1.resources
+C:\Users\java\Desktop\TimeItCustomer 45 buggfix\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.Properties.Resources.resources
+C:\Users\java\Desktop\TimeItCustomer 45 buggfix\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.TaskWindow.resources
+C:\Users\java\Desktop\TimeItCustomer 45 buggfix\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.csproj.GenerateResource.Cache
+C:\Users\java\Desktop\TimeItCustomer 46 buggfix\TimeItCustomer\TimeItCustomer\bin\Debug\TimeItCustomer.exe.config
+C:\Users\java\Desktop\TimeItCustomer 46 buggfix\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.exe
+C:\Users\java\Desktop\TimeItCustomer 46 buggfix\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.pdb
+C:\Users\java\Desktop\TimeItCustomer 46 buggfix\TimeItCustomer\TimeItCustomer\bin\Debug\TimeItCustomer.exe
+C:\Users\java\Desktop\TimeItCustomer 46 buggfix\TimeItCustomer\TimeItCustomer\bin\Debug\TimeItCustomer.pdb
+C:\Users\java\Desktop\TimeItCustomer 46 buggfix\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.ContactDialog.resources
+C:\Users\java\Desktop\TimeItCustomer 46 buggfix\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.Form1.resources
+C:\Users\java\Desktop\TimeItCustomer 46 buggfix\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.Properties.Resources.resources
+C:\Users\java\Desktop\TimeItCustomer 46 buggfix\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.TaskWindow.resources
+C:\Users\java\Desktop\TimeItCustomer 46 buggfix\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.csproj.GenerateResource.Cache
+C:\Users\java\Desktop\TimeItCustomer 46 buggfix\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.csprojResolveAssemblyReference.cache
+C:\Users\java\Desktop\TimeItCustomer 47\TimeItCustomer\TimeItCustomer\bin\Debug\TimeItCustomer.exe.config
+C:\Users\java\Desktop\TimeItCustomer 47\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.exe
+C:\Users\java\Desktop\TimeItCustomer 47\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.pdb
+C:\Users\java\Desktop\TimeItCustomer 47\TimeItCustomer\TimeItCustomer\bin\Debug\TimeItCustomer.exe
+C:\Users\java\Desktop\TimeItCustomer 47\TimeItCustomer\TimeItCustomer\bin\Debug\TimeItCustomer.pdb
+C:\Users\java\Desktop\TimeItCustomer 47\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.csprojResolveAssemblyReference.cache
+C:\Users\java\Desktop\TimeItCustomer 47\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.ContactDialog.resources
+C:\Users\java\Desktop\TimeItCustomer 47\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.Form1.resources
+C:\Users\java\Desktop\TimeItCustomer 47\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.Properties.Resources.resources
+C:\Users\java\Desktop\TimeItCustomer 47\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.TaskWindow.resources
+C:\Users\java\Desktop\TimeItCustomer 47\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.csproj.GenerateResource.Cache
+D:\TimeItCustomer 47\TimeItCustomer\TimeItCustomer\bin\Debug\TimeItCustomer.exe.config
+D:\TimeItCustomer 47\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.exe
+D:\TimeItCustomer 47\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.pdb
+D:\TimeItCustomer 47\TimeItCustomer\TimeItCustomer\bin\Debug\TimeItCustomer.exe
+D:\TimeItCustomer 47\TimeItCustomer\TimeItCustomer\bin\Debug\TimeItCustomer.pdb
+D:\TimeItCustomer 47\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.ContactDialog.resources
+D:\TimeItCustomer 47\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.Form1.resources
+D:\TimeItCustomer 47\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.Properties.Resources.resources
+D:\TimeItCustomer 47\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.TaskWindow.resources
+D:\TimeItCustomer 47\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.csproj.GenerateResource.Cache
+C:\Users\java\Desktop\TimeItCustomer Final\TimeItCustomer\TimeItCustomer\bin\Debug\TimeItCustomer.exe.config
+C:\Users\java\Desktop\TimeItCustomer Final\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.exe
+C:\Users\java\Desktop\TimeItCustomer Final\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.pdb
+C:\Users\java\Desktop\TimeItCustomer Final\TimeItCustomer\TimeItCustomer\bin\Debug\TimeItCustomer.exe
+C:\Users\java\Desktop\TimeItCustomer Final\TimeItCustomer\TimeItCustomer\bin\Debug\TimeItCustomer.pdb
+C:\Users\java\Desktop\TimeItCustomer Final\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.csprojResolveAssemblyReference.cache
+C:\Users\java\Desktop\TimeItCustomer Final\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.ContactDialog.resources
+C:\Users\java\Desktop\TimeItCustomer Final\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.Form1.resources
+C:\Users\java\Desktop\TimeItCustomer Final\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.Properties.Resources.resources
+C:\Users\java\Desktop\TimeItCustomer Final\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.TaskWindow.resources
+C:\Users\java\Desktop\TimeItCustomer Final\TimeItCustomer\TimeItCustomer\obj\Debug\TimeItCustomer.csproj.GenerateResource.Cache
+E:\_PROJECTS\TimeIT\TimeIt_CustomerAdmin\TimeItCustomer\bin\Debug\TimeItCustomer.exe.config
+E:\_PROJECTS\TimeIT\TimeIt_CustomerAdmin\TimeItCustomer\bin\Debug\TimeItCustomer.exe
+E:\_PROJECTS\TimeIT\TimeIt_CustomerAdmin\TimeItCustomer\bin\Debug\TimeItCustomer.pdb
+E:\_PROJECTS\TimeIT\TimeIt_CustomerAdmin\TimeItCustomer\obj\Debug\TimeItCustomer.csprojResolveAssemblyReference.cache
+E:\_PROJECTS\TimeIT\TimeIt_CustomerAdmin\TimeItCustomer\obj\Debug\TimeItCustomer.ContactDialog.resources
+E:\_PROJECTS\TimeIT\TimeIt_CustomerAdmin\TimeItCustomer\obj\Debug\TimeItCustomer.Form1.resources
+E:\_PROJECTS\TimeIT\TimeIt_CustomerAdmin\TimeItCustomer\obj\Debug\TimeItCustomer.Properties.Resources.resources
+E:\_PROJECTS\TimeIT\TimeIt_CustomerAdmin\TimeItCustomer\obj\Debug\TimeItCustomer.TaskWindow.resources
+E:\_PROJECTS\TimeIT\TimeIt_CustomerAdmin\TimeItCustomer\obj\Debug\TimeItCustomer.csproj.GenerateResource.Cache
+E:\_PROJECTS\TimeIT\TimeIt_CustomerAdmin\TimeItCustomer\obj\Debug\TimeItCustomer.exe
+E:\_PROJECTS\TimeIT\TimeIt_CustomerAdmin\TimeItCustomer\obj\Debug\TimeItCustomer.pdb
+C:\Users\java\Documents\Programmering  kurs\C#\Lia 2\Projekt Arbete Lia 2\TimeIt\TimeItCustomer\bin\Debug\TimeItCustomer.exe.config
+C:\Users\java\Documents\Programmering  kurs\C#\Lia 2\Projekt Arbete Lia 2\TimeIt\TimeItCustomer\bin\Debug\TimeItCustomer.exe
+C:\Users\java\Documents\Programmering  kurs\C#\Lia 2\Projekt Arbete Lia 2\TimeIt\TimeItCustomer\bin\Debug\TimeItCustomer.pdb
+C:\Users\java\Documents\Programmering  kurs\C#\Lia 2\Projekt Arbete Lia 2\TimeIt\TimeItCustomer\obj\Debug\TimeItCustomer.csprojResolveAssemblyReference.cache
+C:\Users\java\Documents\Programmering  kurs\C#\Lia 2\Projekt Arbete Lia 2\TimeIt\TimeItCustomer\obj\Debug\TimeItCustomer.ContactDialog.resources
+C:\Users\java\Documents\Programmering  kurs\C#\Lia 2\Projekt Arbete Lia 2\TimeIt\TimeItCustomer\obj\Debug\TimeItCustomer.Form1.resources
+C:\Users\java\Documents\Programmering  kurs\C#\Lia 2\Projekt Arbete Lia 2\TimeIt\TimeItCustomer\obj\Debug\TimeItCustomer.Properties.Resources.resources
+C:\Users\java\Documents\Programmering  kurs\C#\Lia 2\Projekt Arbete Lia 2\TimeIt\TimeItCustomer\obj\Debug\TimeItCustomer.TaskWindow.resources
+C:\Users\java\Documents\Programmering  kurs\C#\Lia 2\Projekt Arbete Lia 2\TimeIt\TimeItCustomer\obj\Debug\TimeItCustomer.csproj.GenerateResource.Cache
+C:\Users\java\Documents\Programmering  kurs\C#\Lia 2\Projekt Arbete Lia 2\TimeIt\TimeItCustomer\obj\Debug\TimeItCustomer.csproj.CoreCompileInputs.cache
+C:\Users\java\Documents\Programmering  kurs\C#\Lia 2\Projekt Arbete Lia 2\TimeIt\TimeItCustomer\obj\Debug\TimeItCustomer.exe
+C:\Users\java\Documents\Programmering  kurs\C#\Lia 2\Projekt Arbete Lia 2\TimeIt\TimeItCustomer\obj\Debug\TimeItCustomer.pdb
+D:\TimeIt\TimeItCustomer\bin\Debug\TimeItCustomer.exe.config
+D:\TimeIt\TimeItCustomer\bin\Debug\TimeItCustomer.exe
+D:\TimeIt\TimeItCustomer\bin\Debug\TimeItCustomer.pdb
+D:\TimeIt\TimeItCustomer\obj\Debug\TimeItCustomer.csprojResolveAssemblyReference.cache
+D:\TimeIt\TimeItCustomer\obj\Debug\TimeItCustomer.ContactDialog.resources
+D:\TimeIt\TimeItCustomer\obj\Debug\TimeItCustomer.Form1.resources
+D:\TimeIt\TimeItCustomer\obj\Debug\TimeItCustomer.Properties.Resources.resources
+D:\TimeIt\TimeItCustomer\obj\Debug\TimeItCustomer.TaskWindow.resources
+D:\TimeIt\TimeItCustomer\obj\Debug\TimeItCustomer.csproj.GenerateResource.Cache
+D:\TimeIt\TimeItCustomer\obj\Debug\TimeItCustomer.csproj.CoreCompileInputs.cache
+D:\TimeIt\TimeItCustomer\obj\Debug\TimeItCustomer.exe
+D:\TimeIt\TimeItCustomer\obj\Debug\TimeItCustomer.pdb
