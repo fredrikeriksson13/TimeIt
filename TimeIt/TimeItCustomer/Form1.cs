@@ -224,7 +224,9 @@ namespace TimeItCustomer
             {
                 if (listboxCustomers.SelectedItem != null)
                 {
+                    // Måste möjligtvis stänga av eventet efter att det är subrscribat?
                     priceWindow = new PriceWindow((int)listboxCustomers.SelectedValue, (int)projectType.projekt, (int)projectType.uppdrag, Convert.ToInt32(txtCustomerStdHourlyPrice.Text), Convert.ToInt32(txtCustomerStdOvetTime1.Text), Convert.ToInt32(txtCustomerStdOvetTime2.Text));
+                    priceWindow.CustomEvent += new PriceWindow.CustomDelegate(ms_CustomEventPriceWindow);
                     priceWindow.ShowDialog();
                 }
             }
@@ -283,6 +285,18 @@ namespace TimeItCustomer
         private void txtCustomerName_TextChanged(object sender, EventArgs e)
         {
             EnableDisableCustomerControls(true);
+        }
+
+        private void ms_CustomEventPriceWindow()
+        {
+            try
+            {
+                PopulateCustomerTextBoxes();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
         }
 
         #endregion
@@ -656,19 +670,19 @@ namespace TimeItCustomer
         }
         private void SetCustomersData(customersRow cRow)
         {
-            int a;
+            float price, over1, over2;
             cRow.customerName = txtCustomerName.Text;
             cRow.address = txtCustomerAdress.Text;
             cRow.orgNumber = txtCustomerOrgNummer.Text;
 
-            int.TryParse(txtCustomerStdHourlyPrice.Text, out a);
-            cRow.stdHourlyPrice = a;
+            float.TryParse(txtCustomerStdHourlyPrice.Text, out price);
+            cRow.stdHourlyPrice = price;
 
-            int.TryParse(txtCustomerStdOvetTime1.Text, out a);
-            cRow.stdOvertime1 = a;
+            float.TryParse(txtCustomerStdOvetTime1.Text, out over1);
+            cRow.stdOvertime1 = over1;
 
-            int.TryParse(txtCustomerStdOvetTime2.Text, out a);
-            cRow.stdOvertime2 = a;
+            float.TryParse(txtCustomerStdOvetTime2.Text, out over2);
+            cRow.stdOvertime2 = over2;
         }
 
         private void EnableDisableCustomerControls(bool state)
@@ -1163,19 +1177,19 @@ namespace TimeItCustomer
                
 
                 int budget;
-                double over1, over2, price, pricefix;
+                float over1, over2, price, pricefix;
                 DateTime start, stop;
                 aRow.description = txtProjectDescription.Text;
                 aRow.remark = txtProjectRemark.Text;
                 int.TryParse(txtProjectBudgetHours.Text, out budget);
                 aRow.budgetHours = budget;
-                double.TryParse(txtProjectOverTime1.Text, out over1);
+                float.TryParse(txtProjectOverTime1.Text, out over1);
                 aRow.overtime1 = over1;
-                double.TryParse(txtProjectOverTime2.Text, out over2);
+                float.TryParse(txtProjectOverTime2.Text, out over2);
                 aRow.overtime2 = over2;
-                double.TryParse(txtProjectPrice.Text, out price);
+                float.TryParse(txtProjectPrice.Text, out price);
                 aRow.price = price;
-                double.TryParse(txtProjectPriceFixed.Text, out pricefix);
+                float.TryParse(txtProjectPriceFixed.Text, out pricefix);
                 aRow.price_fixed = pricefix;
                 aRow.changeDate = DateTime.Now;
                 aRow.changedBy = UserId;

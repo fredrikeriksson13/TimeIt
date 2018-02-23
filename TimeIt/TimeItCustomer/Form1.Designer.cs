@@ -319,7 +319,7 @@
             this.btnPriceOpen.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnPriceOpen.Location = new System.Drawing.Point(349, 180);
             this.btnPriceOpen.Name = "btnPriceOpen";
-            this.btnPriceOpen.Size = new System.Drawing.Size(163, 38);
+            this.btnPriceOpen.Size = new System.Drawing.Size(147, 28);
             this.btnPriceOpen.TabIndex = 4;
             this.btnPriceOpen.Text = "Reglera priser";
             this.btnPriceOpen.UseVisualStyleBackColor = false;

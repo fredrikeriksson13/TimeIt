@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using TimeItCustomer.DsCustomerTableAdapters;
 using static TimeItCustomer.DsCustomer;
+using static TimeItCustomer.TaskWindow;
 
 namespace TimeItCustomer
 {
@@ -17,6 +18,9 @@ namespace TimeItCustomer
     {
         private activitiesTableAdapter ActivitiesAdapter;
         private customersTableAdapter CustomerAdapter;
+        public delegate void CustomDelegate();
+        public event CustomDelegate CustomEvent;
+       
 
         private TreeNode Activities;
         private int CustomerID;
@@ -271,6 +275,7 @@ namespace TimeItCustomer
 
         private void allowToSaveChecker()
         {
+            lblSaved.Visible = false;
             bool checker = false;
 
             foreach (TreeNode parent in treeViewHourlyRate.Nodes)
@@ -343,29 +348,34 @@ namespace TimeItCustomer
         private void btnSave_Click(object sender, EventArgs e)
         {
             SavePriceChanges();
+            lblSaved.Visible = true;
+            RaiseAnEventPriceWindow();
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
-            this.Dispose();
+           this.Dispose();
         }
 
         private void btnSelectAll_Click(object sender, EventArgs e)
         {
             SetNodeValues(true);
             ActivityMarkedChecker();
+            allowToSaveChecker(); 
         }
 
         private void btnUnselectAll_Click(object sender, EventArgs e)
         {
             SetNodeValues(false);
             ActivityMarkedChecker();
+            allowToSaveChecker();
         }
 
         private void btnSelectDefault_Click(object sender, EventArgs e)
         {
             SetNodesToDefault();
             ActivityMarkedChecker();
+            allowToSaveChecker(); 
         }
 
 
@@ -377,7 +387,7 @@ namespace TimeItCustomer
 
             float.TryParse(txtNewPrice.Text, out _overtime2);
             txtNewOvertime2.Text = (_overtime2 * 2f).ToString();
-            if (!string.IsNullOrWhiteSpace(txtNewPrice.Text))
+            if (!string.IsNullOrWhiteSpace(txtNewPrice.Text) && !(e.KeyCode == Keys.Enter) && !(e.KeyCode == Keys.Escape))
             {
                 allowToSaveChecker();
             }
@@ -386,12 +396,19 @@ namespace TimeItCustomer
 
         private void txtNewOvertime1_KeyUp(object sender, KeyEventArgs e)
         {
-            allowToSaveChecker();
+            if (!(e.KeyCode == Keys.Enter) && !(e.KeyCode == Keys.Escape))
+                allowToSaveChecker();
         }
 
         private void txtNewOvertime2_KeyUp(object sender, KeyEventArgs e)
         {
-            allowToSaveChecker();
+            if (!(e.KeyCode == Keys.Enter) && !(e.KeyCode == Keys.Escape))
+                allowToSaveChecker();
+        }
+
+        public void RaiseAnEventPriceWindow()
+        {
+            CustomEvent();
         }
     }
 }

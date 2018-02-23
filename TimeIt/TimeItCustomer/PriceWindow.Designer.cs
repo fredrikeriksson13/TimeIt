@@ -50,6 +50,7 @@
             this.btnUnselectAll = new System.Windows.Forms.Button();
             this.btnSelectDefault = new System.Windows.Forms.Button();
             this.btnSelectAll = new System.Windows.Forms.Button();
+            this.lblSaved = new System.Windows.Forms.Label();
             this.groupBox2.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.SuspendLayout();
@@ -204,6 +205,7 @@
             // groupBox4
             // 
             this.groupBox4.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBox4.Controls.Add(this.lblSaved);
             this.groupBox4.Controls.Add(this.label3);
             this.groupBox4.Controls.Add(this.label2);
             this.groupBox4.Controls.Add(this.label1);
@@ -281,6 +283,17 @@
             this.btnSelectAll.UseVisualStyleBackColor = false;
             this.btnSelectAll.Click += new System.EventHandler(this.btnSelectAll_Click);
             // 
+            // lblSaved
+            // 
+            this.lblSaved.AutoSize = true;
+            this.lblSaved.ForeColor = System.Drawing.Color.ForestGreen;
+            this.lblSaved.Location = new System.Drawing.Point(432, 539);
+            this.lblSaved.Name = "lblSaved";
+            this.lblSaved.Size = new System.Drawing.Size(72, 24);
+            this.lblSaved.TabIndex = 37;
+            this.lblSaved.Text = "Sparat";
+            this.lblSaved.Visible = false;
+            // 
             // PriceWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -324,5 +337,6 @@
         private System.Windows.Forms.Button btnUnselectAll;
         private System.Windows.Forms.Button btnSelectDefault;
         private System.Windows.Forms.Button btnSelectAll;
+        private System.Windows.Forms.Label lblSaved;
     }
 }
