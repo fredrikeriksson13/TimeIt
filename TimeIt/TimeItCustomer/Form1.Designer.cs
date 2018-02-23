@@ -42,12 +42,12 @@
             this.gbCustomerEditAdd = new System.Windows.Forms.GroupBox();
             this.btnPriceOpen = new System.Windows.Forms.Button();
             this.gbCustomer = new System.Windows.Forms.GroupBox();
+            this.txtCustomerOrgNummer = new System.Windows.Forms.TextBox();
             this.txtCustomerAdress = new System.Windows.Forms.RichTextBox();
             this.txtCustomerName = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.lblCustomerAdress = new System.Windows.Forms.Label();
             this.lblName = new System.Windows.Forms.Label();
-            this.txtCustomerOrgNummer = new System.Windows.Forms.TextBox();
             this.lblCustomerOrgNummer = new System.Windows.Forms.Label();
             this.gbCustomerPrice = new System.Windows.Forms.GroupBox();
             this.txtCustomerStdHourlyPrice = new System.Windows.Forms.TextBox();
@@ -131,12 +131,12 @@
             this.lblProjectTyp = new System.Windows.Forms.Label();
             this.lblProjectRemark = new System.Windows.Forms.Label();
             this.lblProjectDescription = new System.Windows.Forms.Label();
-            this.txtProjectDescription = new System.Windows.Forms.TextBox();
             this.comboBoxProjectType = new System.Windows.Forms.ComboBox();
             this.lblHideProjektType = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.comboBoxKlassificiering = new System.Windows.Forms.ComboBox();
             this.labelKlassificering = new System.Windows.Forms.Label();
+            this.txtProjectDescription = new System.Windows.Forms.TextBox();
             this.btnProjectCancel = new System.Windows.Forms.Button();
             this.btnProjectEdit = new System.Windows.Forms.Button();
             this.gbContacts = new System.Windows.Forms.GroupBox();
@@ -314,12 +314,16 @@
             // 
             // btnPriceOpen
             // 
+            this.btnPriceOpen.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnPriceOpen.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
+            this.btnPriceOpen.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnPriceOpen.Location = new System.Drawing.Point(349, 180);
             this.btnPriceOpen.Name = "btnPriceOpen";
-            this.btnPriceOpen.Size = new System.Drawing.Size(113, 38);
+            this.btnPriceOpen.Size = new System.Drawing.Size(163, 38);
             this.btnPriceOpen.TabIndex = 4;
-            this.btnPriceOpen.Text = "button1";
-            this.btnPriceOpen.UseVisualStyleBackColor = true;
+            this.btnPriceOpen.Text = "Reglera priser";
+            this.btnPriceOpen.UseVisualStyleBackColor = false;
+            this.btnPriceOpen.Visible = false;
             this.btnPriceOpen.Click += new System.EventHandler(this.btnPriceOpen_Click);
             // 
             // gbCustomer
@@ -342,6 +346,16 @@
             this.gbCustomer.TabIndex = 0;
             this.gbCustomer.TabStop = false;
             this.gbCustomer.Text = "Kund";
+            // 
+            // txtCustomerOrgNummer
+            // 
+            this.txtCustomerOrgNummer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtCustomerOrgNummer.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCustomerOrgNummer.Location = new System.Drawing.Point(107, 76);
+            this.txtCustomerOrgNummer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtCustomerOrgNummer.Name = "txtCustomerOrgNummer";
+            this.txtCustomerOrgNummer.Size = new System.Drawing.Size(207, 23);
+            this.txtCustomerOrgNummer.TabIndex = 2;
             // 
             // txtCustomerAdress
             // 
@@ -395,16 +409,6 @@
             this.lblName.TabIndex = 0;
             this.lblName.Text = "Name :";
             // 
-            // txtCustomerOrgNummer
-            // 
-            this.txtCustomerOrgNummer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtCustomerOrgNummer.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCustomerOrgNummer.Location = new System.Drawing.Point(107, 76);
-            this.txtCustomerOrgNummer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtCustomerOrgNummer.Name = "txtCustomerOrgNummer";
-            this.txtCustomerOrgNummer.Size = new System.Drawing.Size(207, 23);
-            this.txtCustomerOrgNummer.TabIndex = 2;
-            // 
             // lblCustomerOrgNummer
             // 
             this.lblCustomerOrgNummer.AutoSize = true;
@@ -446,6 +450,7 @@
             this.txtCustomerStdHourlyPrice.Name = "txtCustomerStdHourlyPrice";
             this.txtCustomerStdHourlyPrice.Size = new System.Drawing.Size(100, 23);
             this.txtCustomerStdHourlyPrice.TabIndex = 0;
+            this.txtCustomerStdHourlyPrice.TextChanged += new System.EventHandler(this.txtCustomerStdHourlyPrice_TextChanged);
             // 
             // lblStdHourlyPrice
             // 
@@ -1445,16 +1450,6 @@
             this.lblProjectDescription.TabIndex = 0;
             this.lblProjectDescription.Text = "Namn :";
             // 
-            // txtProjectDescription
-            // 
-            this.txtProjectDescription.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtProjectDescription.Location = new System.Drawing.Point(97, 25);
-            this.txtProjectDescription.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtProjectDescription.Name = "txtProjectDescription";
-            this.txtProjectDescription.Size = new System.Drawing.Size(207, 23);
-            this.txtProjectDescription.TabIndex = 1;
-            this.txtProjectDescription.TextChanged += new System.EventHandler(this.txtProjectDescription_TextChanged);
-            // 
             // comboBoxProjectType
             // 
             this.comboBoxProjectType.BackColor = System.Drawing.SystemColors.HighlightText;
@@ -1513,6 +1508,16 @@
             this.labelKlassificering.Size = new System.Drawing.Size(208, 26);
             this.labelKlassificering.TabIndex = 43;
             this.labelKlassificering.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // txtProjectDescription
+            // 
+            this.txtProjectDescription.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtProjectDescription.Location = new System.Drawing.Point(97, 25);
+            this.txtProjectDescription.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtProjectDescription.Name = "txtProjectDescription";
+            this.txtProjectDescription.Size = new System.Drawing.Size(207, 23);
+            this.txtProjectDescription.TabIndex = 1;
+            this.txtProjectDescription.TextChanged += new System.EventHandler(this.txtProjectDescription_TextChanged);
             // 
             // btnProjectCancel
             // 

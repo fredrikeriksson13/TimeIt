@@ -31,6 +31,8 @@ namespace TimeItCustomer
         private bool Edit;
         private bool CreatingNewActivity;
         private int maxID;
+        private float _overtime1;
+        private float _overtime2;
 
         private enum activityStatus
         {
@@ -76,9 +78,9 @@ namespace TimeItCustomer
             [Description("Konsultation")]
             Konsultation = 2,
             [Description("Systemutveckling")]
-            Servicedesk = 3,
+            Systemutveckling = 3,
             [Description("Servicedesk")]
-            Systemutveckling = 4,
+            Servicedesk = 4,
             [Description("Utbildning")]
             Utbildning = 5,
             [Description("Support")]
@@ -216,6 +218,33 @@ namespace TimeItCustomer
 
         #region CustomerEvents
 
+        private void btnPriceOpen_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (listboxCustomers.SelectedItem != null)
+                {
+                    priceWindow = new PriceWindow((int)listboxCustomers.SelectedValue, (int)projectType.projekt, (int)projectType.uppdrag, Convert.ToInt32(txtCustomerStdHourlyPrice.Text), Convert.ToInt32(txtCustomerStdOvetTime1.Text), Convert.ToInt32(txtCustomerStdOvetTime2.Text));
+                    priceWindow.ShowDialog();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+
+
+        }
+
+        private void txtCustomerStdHourlyPrice_TextChanged(object sender, EventArgs e)
+        {
+            float.TryParse(txtCustomerStdHourlyPrice.Text, out _overtime1);
+            txtCustomerStdOvetTime1.Text = (_overtime1 * 1.5f).ToString();
+
+            float.TryParse(txtCustomerStdHourlyPrice.Text, out _overtime2);
+            txtCustomerStdOvetTime2.Text = (_overtime2 * 2f).ToString();
+        }
+
         private void btnCustomerAdd_Click(object sender, EventArgs e)
         {
             ClearCustomerData();
@@ -315,7 +344,8 @@ namespace TimeItCustomer
            
             gbTaskCounter.Visible = false;
             EnableDisableProjectControls(true);
-            comboBoxProjectPriceStatus.SelectedIndex = 0;comboBoxKlassificiering.SelectedIndex = 0;
+            comboBoxProjectPriceStatus.SelectedIndex = 0;
+            SetTimeClassificationByDeafultUser();
             txtProjectDescription.Focus();
         }
 
@@ -641,7 +671,11 @@ namespace TimeItCustomer
         private void EnableDisableCustomerControls(bool state)
         {
             if (listboxCustomers.SelectedItem != null)
+            {
+                btnPriceOpen.Visible = !state;
                 btnCustomerEdit.Visible = !state;
+            }
+               
             if (string.IsNullOrWhiteSpace(txtCustomerName.Text) != true && state == true)
                 btnCustomerSave.Visible = state;
             else
@@ -785,7 +819,25 @@ namespace TimeItCustomer
         #endregion
 
         #region ProjectMethods
+        private void SetTimeClassificationByDeafultUser()
+        {
+            string[] useArr = System.Security.Principal.WindowsIdentity.GetCurrent().Name.Split('\\');
+            string username = useArr[1];
 
+            UsersAdapter = new usersTableAdapter();
+            usersDataTable usrDt = UsersAdapter.GetDepartementByUsername(username);
+
+            usersRow usr = (usersRow)usrDt.Rows[0];
+
+            if(usr.department == "Systemutveckling")
+            {
+                comboBoxKlassificiering.SelectedItem = timeClassification.Systemutveckling;
+            }
+            else
+            {
+                comboBoxKlassificiering.SelectedItem = timeClassification.Konsultation;
+            }
+        }
         private void PopulateProjectTypeComboBox(typeSwitch Type)
         {
             comboBoxProjectType.DisplayMember = "Description";
@@ -1685,17 +1737,6 @@ namespace TimeItCustomer
 
         #endregion
 
-        private void btnPriceOpen_Click(object sender, EventArgs e)
-        {
-            if(listboxCustomers.SelectedItem != null)
-            {
-                priceWindow = new PriceWindow((int)listboxCustomers.SelectedValue, (int)projectType.projekt, (int)projectType.uppdrag, Convert.ToInt32(txtCustomerStdHourlyPrice.Text), Convert.ToInt32(txtCustomerStdOvetTime1.Text) , Convert.ToInt32(txtCustomerStdOvetTime2.Text));
-                priceWindow.ShowDialog();
-            }
-           
-
-        }
-
-       
+        
     }
 }

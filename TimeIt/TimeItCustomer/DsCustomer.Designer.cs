@@ -5760,7 +5760,10 @@ FROM     activities";
             this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@CustomerID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "customerID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[3] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[3].Connection = this.Connection;
-            this._commandCollection[3].CommandText = "SELECT ID, price, overtime1, overtime2\r\nFROM activities\r\nwhere (ID = @ID)";
+            this._commandCollection[3].CommandText = @"SELECT ID, price, overtime1, overtime2, customerID, parentID, contactID, rootID, description, remark, type, budgetHours, priceStatus, price_fixed, timeClassificationID, status, changedBy, changeDate, invoiceUserID, startDate, 
+                  stopDate, calculatedHours, tfsProject, invoiceDescription, projectManagerID, estimatedHours
+FROM     activities
+WHERE  (ID = @ID)";
             this._commandCollection[3].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "ID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[4] = new global::System.Data.SqlClient.SqlCommand();
@@ -7612,7 +7615,7 @@ SELECT ID, firstName, lastName, username, email, createDate, status, department 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[6];
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[7];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "select * from\r\nusers AS U WHERE (ID IN (SELECT UG.userID FROM userGroup AS UG INN" +
@@ -7645,10 +7648,15 @@ SELECT ID, firstName, lastName, username, email, createDate, status, department 
             this._commandCollection[4].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "activityID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[5] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[5].Connection = this.Connection;
-            this._commandCollection[5].CommandText = "select (firstName + \' \' + lastName) AS firstName from Users\r\nwhere (ID = @Changeb" +
-                "yID)";
+            this._commandCollection[5].CommandText = "select department from users\r\nwhere (username = @username)";
             this._commandCollection[5].CommandType = global::System.Data.CommandType.Text;
-            this._commandCollection[5].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ChangebyID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "ID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[5].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@username", global::System.Data.SqlDbType.NVarChar, 50, global::System.Data.ParameterDirection.Input, 0, 0, "username", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[6] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[6].Connection = this.Connection;
+            this._commandCollection[6].CommandText = "select (firstName + \' \' + lastName) AS firstName from Users\r\nwhere (ID = @Changeb" +
+                "yID)";
+            this._commandCollection[6].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[6].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ChangebyID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "ID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -7712,8 +7720,25 @@ SELECT ID, firstName, lastName, username, email, createDate, status, department 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
-        public virtual DsCustomer.usersDataTable GetUserNameByChangeByID(int ChangebyID) {
+        public virtual DsCustomer.usersDataTable GetDepartementByUsername(string username) {
             this.Adapter.SelectCommand = this.CommandCollection[5];
+            if ((username == null)) {
+                this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(username));
+            }
+            DsCustomer.usersDataTable dataTable = new DsCustomer.usersDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual DsCustomer.usersDataTable GetUserNameByChangeByID(int ChangebyID) {
+            this.Adapter.SelectCommand = this.CommandCollection[6];
             this.Adapter.SelectCommand.Parameters[0].Value = ((int)(ChangebyID));
             DsCustomer.usersDataTable dataTable = new DsCustomer.usersDataTable();
             this.Adapter.Fill(dataTable);
