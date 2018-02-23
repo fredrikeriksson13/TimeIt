@@ -640,7 +640,7 @@
             this.lbUsers.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Bold);
             this.lbUsers.FormattingEnabled = true;
             this.lbUsers.ItemHeight = 16;
-            this.lbUsers.Location = new System.Drawing.Point(6, 24);
+            this.lbUsers.Location = new System.Drawing.Point(6, 101);
             this.lbUsers.Name = "lbUsers";
             this.lbUsers.Size = new System.Drawing.Size(188, 196);
             this.lbUsers.TabIndex = 13;
@@ -651,7 +651,7 @@
             this.btnAddUser.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnAddUser.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Bold);
             this.btnAddUser.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnAddUser.Location = new System.Drawing.Point(6, 270);
+            this.btnAddUser.Location = new System.Drawing.Point(6, 30);
             this.btnAddUser.Name = "btnAddUser";
             this.btnAddUser.Size = new System.Drawing.Size(188, 35);
             this.btnAddUser.TabIndex = 11;
@@ -665,7 +665,7 @@
             this.cbUsers.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbUsers.FormattingEnabled = true;
             this.cbUsers.IntegralHeight = false;
-            this.cbUsers.Location = new System.Drawing.Point(6, 232);
+            this.cbUsers.Location = new System.Drawing.Point(6, 71);
             this.cbUsers.MaxDropDownItems = 12;
             this.cbUsers.Name = "cbUsers";
             this.cbUsers.Size = new System.Drawing.Size(188, 24);

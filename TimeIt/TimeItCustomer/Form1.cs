@@ -331,20 +331,23 @@ namespace TimeItCustomer
             ClearProjectData();
             
             SetNewProjectDefaultPrice();
+
             PopulateProjectPriceStatusComboBox();
             PopulateTimeClassificationComboBox();
             PopulateProjectTypeComboBox(typeSwitch.projektAndUppdrag);
-
             PopulateCmdContactRef();
             PopulateAttestComboBox();
             PopulateProjectManagerCombobox();
             cbAttest.SelectedValue = UserId;
             chkProjecktActive.Checked = true;
+            chkProjecktOkToAttest.Checked = true;
+            chkProjecktOkToTidredovisa.Checked = true;
             treeViewProjects.SelectedNode = null;
            
             gbTaskCounter.Visible = false;
             EnableDisableProjectControls(true);
             comboBoxProjectPriceStatus.SelectedIndex = 0;
+            comboBoxProjectType.SelectedValue = projectType.uppdrag;
             SetTimeClassificationByDeafultUser();
             txtProjectDescription.Focus();
         }
@@ -831,11 +834,11 @@ namespace TimeItCustomer
 
             if(usr.department == "Systemutveckling")
             {
-                comboBoxKlassificiering.SelectedItem = timeClassification.Systemutveckling;
+                comboBoxKlassificiering.SelectedValue = timeClassification.Systemutveckling;
             }
             else
             {
-                comboBoxKlassificiering.SelectedItem = timeClassification.Konsultation;
+                comboBoxKlassificiering.SelectedValue = timeClassification.Konsultation;
             }
         }
         private void PopulateProjectTypeComboBox(typeSwitch Type)
