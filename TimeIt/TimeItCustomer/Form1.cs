@@ -1156,6 +1156,9 @@ namespace TimeItCustomer
         /// <param name="ID"></param>
         private void CreateProjectActivity(int ID)
         {
+            bool _setStartDateToNull = false;
+            bool _setStopDateToNull = false;
+
             try
             {
                 ActivitiesAdapter = new activitiesTableAdapter();
@@ -1193,26 +1196,28 @@ namespace TimeItCustomer
                 aRow.price_fixed = pricefix;
                 aRow.changeDate = DateTime.Now;
                 aRow.changedBy = UserId;
-                dtpProjectStartDate.Value.Equals(DateTime.Parse("1900-01-01 00:00:00"));
-                if (dtpProjectStartDate.Value.Equals(DateTime.Parse("1900-01-01 00:00:00")))
-                {
-                    aRow.startDate = DateTime.Parse("1900-01-01 00:00:00");
-                }
-                else
+
+                if (!dtpProjectStartDate.Value.Equals(DateTime.Parse("1900-01-01 00:00:00")))
                 {
                     DateTime.TryParse(dtpProjectStartDate.Value.ToString(), out start);
                     aRow.startDate = start;
                 }
-                dtpProjectStopDate.Value.Equals(DateTime.Parse("1900-01-01 00:00:00"));
-                if (dtpProjectStopDate.Value.Equals(DateTime.Parse("1900-01-01 00:00:00")))
-                {
-                    aRow.stopDate = DateTime.Parse("1900-01-01 00:00:00");
-                }
                 else
+                {
+                    _setStartDateToNull = true;
+                   
+                }
+
+                if (!dtpProjectStopDate.Value.Equals(DateTime.Parse("1900-01-01 00:00:00")))
                 {
                     DateTime.TryParse(dtpProjectStopDate.Value.ToString(), out stop);
                     aRow.stopDate = stop;
                 }
+                else
+                {
+                    _setStopDateToNull = true;
+                }
+
                 //Sets project Status
                 aRow.status = 0;
                 if (chkProjecktActive.Checked)
@@ -1267,7 +1272,19 @@ namespace TimeItCustomer
 
                 ActivitiesAdapter.Update(aTables);
                 ActivitiesAdapter.Dispose();
-                treeViewProjects.Nodes.Clear();
+                //treeViewProjects.Nodes.Clear();
+
+                if (_setStartDateToNull == true)
+                {
+                    ActivitiesAdapter.UpdateStartDateByID(ID);
+                    ActivitiesAdapter.Dispose();
+                }
+
+                if(_setStopDateToNull == true)
+                {
+                    ActivitiesAdapter.UpdateStopDateByID(ID);
+                    ActivitiesAdapter.Dispose();
+                }
             }
 
             catch (Exception ex)
@@ -1625,7 +1642,7 @@ namespace TimeItCustomer
                             }
                         }
                     }
-                    else if ((int)node.Tag == Id && found == false)
+                    if ((int)node.Tag == Id && found == false)
                     {
                         treeViewProjects.SelectedNode = node;
                         activityID = Id;
