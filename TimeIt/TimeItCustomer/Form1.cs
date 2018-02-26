@@ -1193,26 +1193,19 @@ namespace TimeItCustomer
                 aRow.price_fixed = pricefix;
                 aRow.changeDate = DateTime.Now;
                 aRow.changedBy = UserId;
-                dtpProjectStartDate.Value.Equals(DateTime.Parse("1900-01-01 00:00:00"));
-                if (dtpProjectStartDate.Value.Equals(DateTime.Parse("1900-01-01 00:00:00")))
-                {
-                    aRow.startDate = DateTime.Parse("1900-01-01 00:00:00");
-                }
-                else
+
+                if (!dtpProjectStartDate.Value.Equals(DateTime.Parse("1900-01-01 00:00:00")))
                 {
                     DateTime.TryParse(dtpProjectStartDate.Value.ToString(), out start);
                     aRow.startDate = start;
                 }
-                dtpProjectStopDate.Value.Equals(DateTime.Parse("1900-01-01 00:00:00"));
-                if (dtpProjectStopDate.Value.Equals(DateTime.Parse("1900-01-01 00:00:00")))
-                {
-                    aRow.stopDate = DateTime.Parse("1900-01-01 00:00:00");
-                }
-                else
+
+                if (!dtpProjectStopDate.Value.Equals(DateTime.Parse("1900-01-01 00:00:00")))
                 {
                     DateTime.TryParse(dtpProjectStopDate.Value.ToString(), out stop);
                     aRow.stopDate = stop;
                 }
+
                 //Sets project Status
                 aRow.status = 0;
                 if (chkProjecktActive.Checked)
