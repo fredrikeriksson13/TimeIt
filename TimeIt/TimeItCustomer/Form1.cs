@@ -341,7 +341,7 @@ namespace TimeItCustomer
         private void chkProjecktActive_Click(object sender, EventArgs e)
         {
             if(Edit == true)
-            SetChildrenActiveOrInactive();
+                SetChildrenActiveOrInactive();
         }
 
         private void chkProjectInActive_CheckedChanged(object sender, EventArgs e)
@@ -416,7 +416,8 @@ namespace TimeItCustomer
 
         private void btnProjectCancel_Click(object sender, EventArgs e)
         {
-
+            _setChildrenInactive = false;
+            _setChildrenActive = false;
 
             if (treeViewProjects.SelectedNode == null)
             {
@@ -444,6 +445,8 @@ namespace TimeItCustomer
 
         private void treeViewProjects_MouseClick(object sender, MouseEventArgs e)
         {
+            _setChildrenInactive = false;
+            _setChildrenActive = false;
             gbTaskCounter.Visible = false;
             gbTaskCounter.Text = "Tasks : 0";
             treeViewProjects.SelectedNode = treeViewProjects.GetNodeAt(e.X, e.Y);
@@ -998,6 +1001,8 @@ namespace TimeItCustomer
 
         private void ClearProjectData()
         {
+            _setChildrenInactive = false;
+            _setChildrenActive = false;
             txtProjectDescription.Clear();
             txtProjectRemark.Clear();
             txtProjectBudgetHours.Clear();
@@ -1342,13 +1347,18 @@ namespace TimeItCustomer
                 ActivitiesAdapter.Dispose();
                 //treeViewProjects.Nodes.Clear();
 
-                if (_setChildrenActive)
+                if (_setChildrenActive && ID != 0 && Edit == true)
                 {
+                    _setChildrenInactive = false;
+                    _setChildrenActive = false;
                     ActivitiesAdapter.UpdateChildrenStatusActive(ID);
                     ActivitiesAdapter.Dispose();
+
                 }
-                if (_setChildrenInactive)
+                if (_setChildrenInactive && ID != 0 && Edit == true)
                 {
+                    _setChildrenInactive = false;
+                    _setChildrenActive = false;
                     ActivitiesAdapter.UpdateChildrenStatusInActive(ID);
                     ActivitiesAdapter.Dispose();
                 }
@@ -1372,8 +1382,6 @@ namespace TimeItCustomer
                 MessageBox.Show(ex.ToString());
             }
         }
-
-
 
 
         /// <summary>
