@@ -340,7 +340,7 @@ namespace TimeItCustomer
 
         private void chkProjecktActive_Click(object sender, EventArgs e)
         {
-            if(Edit == true)
+            if (Edit == true)
                 SetChildrenActiveOrInactive();
         }
 
@@ -368,7 +368,7 @@ namespace TimeItCustomer
             chkProjecktOkToTidredovisa.Checked = true;
             treeViewProjects.SelectedNode = null;
 
-            gbTaskCounter.Visible = true;
+
             EnableDisableProjectControls(true);
             comboBoxProjectPriceStatus.SelectedIndex = 0;
             comboBoxProjectType.SelectedValue = projectType.uppdrag;
@@ -866,7 +866,7 @@ namespace TimeItCustomer
             int? count = ActivitiesAdapter.GetCountOnParentID((int)treeViewProjects.SelectedNode.Tag);
             ActivitiesAdapter.Dispose();
 
-            if (count != null && count > 0 )
+            if (count != null && count > 0)
             {
                 if (chkProjecktActive.Checked)
                 {
@@ -1363,7 +1363,7 @@ namespace TimeItCustomer
                     ActivitiesAdapter.Dispose();
                 }
 
-                
+
                 if (_setStartDateToNull == true)
                 {
                     ActivitiesAdapter.UpdateStartDateByID(ID);
@@ -1734,10 +1734,18 @@ namespace TimeItCustomer
                             }
                         }
                     }
-                    if ((int)node.Tag == Id && found == false)
+                    if ((int)node.Tag == Id + 1 && found == false)
                     {
                         treeViewProjects.SelectedNode = node;
                         activityID = Id;
+                        if (comboBoxProjectType.SelectedValue.Equals(projectType.uppdrag))
+                        {
+                            gbTaskCounter.Visible = true;
+                        }
+                        else
+                        {
+                            gbTaskCounter.Visible = false;
+                        }
                         break;
                     }
                 }
@@ -1868,7 +1876,7 @@ namespace TimeItCustomer
 
         #endregion
 
-        
-      
+
+
     }
 }
