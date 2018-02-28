@@ -32,7 +32,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.treeViewProjects = new System.Windows.Forms.TreeView();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.btnCustomerSave = new System.Windows.Forms.Button();
             this.txtCustomerSearch = new System.Windows.Forms.TextBox();
             this.gbSearch = new System.Windows.Forms.GroupBox();
             this.lblSearch = new System.Windows.Forms.Label();
@@ -40,6 +39,7 @@
             this.btnCustomerAdd = new System.Windows.Forms.Button();
             this.chkProjectInActive = new System.Windows.Forms.CheckBox();
             this.gbCustomerEditAdd = new System.Windows.Forms.GroupBox();
+            this.btnCustomerSave = new System.Windows.Forms.Button();
             this.btnPriceOpen = new System.Windows.Forms.Button();
             this.gbCustomer = new System.Windows.Forms.GroupBox();
             this.txtCustomerOrgNummer = new System.Windows.Forms.TextBox();
@@ -59,10 +59,12 @@
             this.btnCustomerCancel = new System.Windows.Forms.Button();
             this.btnCustomerEdit = new System.Windows.Forms.Button();
             this.chkProjectProjectPlanning = new System.Windows.Forms.CheckBox();
-            this.btnContactEdit = new System.Windows.Forms.Button();
-            this.btnContactAdd = new System.Windows.Forms.Button();
             this.listBoxContacts = new System.Windows.Forms.ListBox();
             this.gbProject = new System.Windows.Forms.GroupBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.btnProjectSave = new System.Windows.Forms.Button();
+            this.btnProjectCancel = new System.Windows.Forms.Button();
+            this.btnProjectEdit = new System.Windows.Forms.Button();
             this.gbUsers = new System.Windows.Forms.GroupBox();
             this.lbUsers = new System.Windows.Forms.ListBox();
             this.btnAddUser = new System.Windows.Forms.Button();
@@ -112,7 +114,6 @@
             this.chkProjectAvslutat = new System.Windows.Forms.CheckBox();
             this.lblHideKlar = new System.Windows.Forms.Label();
             this.chkProjectActivityDone = new System.Windows.Forms.CheckBox();
-            this.btnProjectSave = new System.Windows.Forms.Button();
             this.btnProjectNew = new System.Windows.Forms.Button();
             this.gbProjectPrice = new System.Windows.Forms.GroupBox();
             this.txtProjectOverTime2 = new System.Windows.Forms.TextBox();
@@ -137,18 +138,19 @@
             this.comboBoxKlassificiering = new System.Windows.Forms.ComboBox();
             this.labelKlassificering = new System.Windows.Forms.Label();
             this.txtProjectDescription = new System.Windows.Forms.TextBox();
-            this.btnProjectCancel = new System.Windows.Forms.Button();
-            this.btnProjectEdit = new System.Windows.Forms.Button();
             this.gbContacts = new System.Windows.Forms.GroupBox();
-            this.pb = new System.Windows.Forms.PictureBox();
+            this.btnContactEdit = new System.Windows.Forms.Button();
+            this.btnContactAdd = new System.Windows.Forms.Button();
             this.toolTipStartDatumClear = new System.Windows.Forms.ToolTip(this.components);
             this.toolTipSlutDatumClear = new System.Windows.Forms.ToolTip(this.components);
             this.tableAdapterManager1 = new TimeItCustomer.DsCustomerTableAdapters.TableAdapterManager();
+            this.pb = new System.Windows.Forms.PictureBox();
             this.gbSearch.SuspendLayout();
             this.gbCustomerEditAdd.SuspendLayout();
             this.gbCustomer.SuspendLayout();
             this.gbCustomerPrice.SuspendLayout();
             this.gbProject.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.gbUsers.SuspendLayout();
             this.gbTaskCounter.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -187,21 +189,6 @@
             this.imageList1.Images.SetKeyName(2, "Document-Red.png");
             this.imageList1.Images.SetKeyName(3, "Documents-Gray.png");
             this.imageList1.Images.SetKeyName(4, "Document-Gray.png");
-            // 
-            // btnCustomerSave
-            // 
-            this.btnCustomerSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCustomerSave.BackColor = System.Drawing.SystemColors.Desktop;
-            this.btnCustomerSave.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCustomerSave.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnCustomerSave.Location = new System.Drawing.Point(460, 234);
-            this.btnCustomerSave.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnCustomerSave.Name = "btnCustomerSave";
-            this.btnCustomerSave.Size = new System.Drawing.Size(75, 28);
-            this.btnCustomerSave.TabIndex = 2;
-            this.btnCustomerSave.Text = "Spara";
-            this.btnCustomerSave.UseVisualStyleBackColor = false;
-            this.btnCustomerSave.Click += new System.EventHandler(this.btnCustomerSave_Click);
             // 
             // txtCustomerSearch
             // 
@@ -269,10 +256,12 @@
             this.btnCustomerAdd.BackColor = System.Drawing.SystemColors.Desktop;
             this.btnCustomerAdd.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCustomerAdd.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnCustomerAdd.Location = new System.Drawing.Point(275, 36);
+            this.btnCustomerAdd.Image = global::TimeItCustomer.Properties.Resources.Addition_;
+            this.btnCustomerAdd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCustomerAdd.Location = new System.Drawing.Point(241, 36);
             this.btnCustomerAdd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCustomerAdd.Name = "btnCustomerAdd";
-            this.btnCustomerAdd.Size = new System.Drawing.Size(95, 31);
+            this.btnCustomerAdd.Size = new System.Drawing.Size(129, 31);
             this.btnCustomerAdd.TabIndex = 3;
             this.btnCustomerAdd.Text = "Ny kund";
             this.btnCustomerAdd.UseVisualStyleBackColor = false;
@@ -295,10 +284,10 @@
             // gbCustomerEditAdd
             // 
             this.gbCustomerEditAdd.BackColor = System.Drawing.SystemColors.Control;
+            this.gbCustomerEditAdd.Controls.Add(this.btnCustomerSave);
             this.gbCustomerEditAdd.Controls.Add(this.btnPriceOpen);
             this.gbCustomerEditAdd.Controls.Add(this.gbCustomer);
             this.gbCustomerEditAdd.Controls.Add(this.gbCustomerPrice);
-            this.gbCustomerEditAdd.Controls.Add(this.btnCustomerSave);
             this.gbCustomerEditAdd.Controls.Add(this.btnCustomerCancel);
             this.gbCustomerEditAdd.Controls.Add(this.btnCustomerEdit);
             this.gbCustomerEditAdd.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -312,16 +301,37 @@
             this.gbCustomerEditAdd.TabStop = false;
             this.gbCustomerEditAdd.Text = "Kunddata";
             // 
+            // btnCustomerSave
+            // 
+            this.btnCustomerSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCustomerSave.BackColor = System.Drawing.SystemColors.Desktop;
+            this.btnCustomerSave.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCustomerSave.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnCustomerSave.Image = global::TimeItCustomer.Properties.Resources.Save;
+            this.btnCustomerSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCustomerSave.Location = new System.Drawing.Point(397, 234);
+            this.btnCustomerSave.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnCustomerSave.Name = "btnCustomerSave";
+            this.btnCustomerSave.Size = new System.Drawing.Size(114, 30);
+            this.btnCustomerSave.TabIndex = 2;
+            this.btnCustomerSave.Text = "Spara";
+            this.btnCustomerSave.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCustomerSave.UseVisualStyleBackColor = false;
+            this.btnCustomerSave.Click += new System.EventHandler(this.btnCustomerSave_Click);
+            // 
             // btnPriceOpen
             // 
             this.btnPriceOpen.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnPriceOpen.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
             this.btnPriceOpen.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnPriceOpen.Image = global::TimeItCustomer.Properties.Resources.Black_MoneyBag;
+            this.btnPriceOpen.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnPriceOpen.Location = new System.Drawing.Point(349, 180);
             this.btnPriceOpen.Name = "btnPriceOpen";
-            this.btnPriceOpen.Size = new System.Drawing.Size(147, 28);
+            this.btnPriceOpen.Size = new System.Drawing.Size(158, 31);
             this.btnPriceOpen.TabIndex = 4;
             this.btnPriceOpen.Text = "Reglera priser";
+            this.btnPriceOpen.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnPriceOpen.UseVisualStyleBackColor = false;
             this.btnPriceOpen.Visible = false;
             this.btnPriceOpen.Click += new System.EventHandler(this.btnPriceOpen_Click);
@@ -506,12 +516,15 @@
             this.btnCustomerCancel.BackColor = System.Drawing.SystemColors.Desktop;
             this.btnCustomerCancel.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCustomerCancel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnCustomerCancel.Location = new System.Drawing.Point(541, 234);
+            this.btnCustomerCancel.Image = global::TimeItCustomer.Properties.Resources.Cancel;
+            this.btnCustomerCancel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCustomerCancel.Location = new System.Drawing.Point(513, 234);
             this.btnCustomerCancel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCustomerCancel.Name = "btnCustomerCancel";
-            this.btnCustomerCancel.Size = new System.Drawing.Size(91, 28);
+            this.btnCustomerCancel.Size = new System.Drawing.Size(119, 30);
             this.btnCustomerCancel.TabIndex = 3;
             this.btnCustomerCancel.Text = "Avbryt";
+            this.btnCustomerCancel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCustomerCancel.UseVisualStyleBackColor = false;
             this.btnCustomerCancel.Click += new System.EventHandler(this.btnCustomerCancel_Click);
             // 
@@ -521,12 +534,15 @@
             this.btnCustomerEdit.BackColor = System.Drawing.SystemColors.Desktop;
             this.btnCustomerEdit.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCustomerEdit.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnCustomerEdit.Location = new System.Drawing.Point(541, 234);
+            this.btnCustomerEdit.Image = global::TimeItCustomer.Properties.Resources.Edit;
+            this.btnCustomerEdit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCustomerEdit.Location = new System.Drawing.Point(513, 234);
             this.btnCustomerEdit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCustomerEdit.Name = "btnCustomerEdit";
-            this.btnCustomerEdit.Size = new System.Drawing.Size(91, 28);
+            this.btnCustomerEdit.Size = new System.Drawing.Size(119, 30);
             this.btnCustomerEdit.TabIndex = 1;
             this.btnCustomerEdit.Text = "Redigera";
+            this.btnCustomerEdit.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCustomerEdit.UseVisualStyleBackColor = false;
             this.btnCustomerEdit.Visible = false;
             this.btnCustomerEdit.Click += new System.EventHandler(this.btnCustomerEdit_Click);
@@ -542,36 +558,6 @@
             this.chkProjectProjectPlanning.TabIndex = 0;
             this.chkProjectProjectPlanning.Text = "ProjektPl";
             this.chkProjectProjectPlanning.UseVisualStyleBackColor = true;
-            // 
-            // btnContactEdit
-            // 
-            this.btnContactEdit.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btnContactEdit.BackColor = System.Drawing.SystemColors.Desktop;
-            this.btnContactEdit.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnContactEdit.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnContactEdit.Location = new System.Drawing.Point(387, 234);
-            this.btnContactEdit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnContactEdit.Name = "btnContactEdit";
-            this.btnContactEdit.Size = new System.Drawing.Size(91, 28);
-            this.btnContactEdit.TabIndex = 2;
-            this.btnContactEdit.Text = "Redigera";
-            this.btnContactEdit.UseVisualStyleBackColor = false;
-            this.btnContactEdit.Click += new System.EventHandler(this.btnContactEdit_Click);
-            // 
-            // btnContactAdd
-            // 
-            this.btnContactAdd.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btnContactAdd.BackColor = System.Drawing.SystemColors.Desktop;
-            this.btnContactAdd.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnContactAdd.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnContactAdd.Location = new System.Drawing.Point(323, 22);
-            this.btnContactAdd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnContactAdd.Name = "btnContactAdd";
-            this.btnContactAdd.Size = new System.Drawing.Size(125, 30);
-            this.btnContactAdd.TabIndex = 1;
-            this.btnContactAdd.Text = "Ny kontakt";
-            this.btnContactAdd.UseVisualStyleBackColor = false;
-            this.btnContactAdd.Click += new System.EventHandler(this.btnContactAdd_Click);
             // 
             // listBoxContacts
             // 
@@ -593,6 +579,7 @@
             this.gbProject.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.gbProject.BackColor = System.Drawing.SystemColors.Control;
+            this.gbProject.Controls.Add(this.groupBox3);
             this.gbProject.Controls.Add(this.gbUsers);
             this.gbProject.Controls.Add(this.label7);
             this.gbProject.Controls.Add(this.lblShowID);
@@ -603,13 +590,10 @@
             this.gbProject.Controls.Add(this.groupBox1);
             this.gbProject.Controls.Add(this.gbProjectTimeplaning);
             this.gbProject.Controls.Add(this.gbProjectActivityStatus);
-            this.gbProject.Controls.Add(this.btnProjectSave);
             this.gbProject.Controls.Add(this.btnProjectNew);
             this.gbProject.Controls.Add(this.gbProjectPrice);
             this.gbProject.Controls.Add(this.treeViewProjects);
             this.gbProject.Controls.Add(this.gbProjectName);
-            this.gbProject.Controls.Add(this.btnProjectCancel);
-            this.gbProject.Controls.Add(this.btnProjectEdit);
             this.gbProject.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbProject.ForeColor = System.Drawing.SystemColors.ControlText;
             this.gbProject.Location = new System.Drawing.Point(401, 286);
@@ -620,6 +604,73 @@
             this.gbProject.TabIndex = 3;
             this.gbProject.TabStop = false;
             this.gbProject.Text = "Projekt";
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.groupBox3.Controls.Add(this.btnProjectSave);
+            this.groupBox3.Controls.Add(this.btnProjectCancel);
+            this.groupBox3.Controls.Add(this.btnProjectEdit);
+            this.groupBox3.Location = new System.Drawing.Point(701, 518);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(229, 37);
+            this.groupBox3.TabIndex = 16;
+            this.groupBox3.TabStop = false;
+            // 
+            // btnProjectSave
+            // 
+            this.btnProjectSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnProjectSave.BackColor = System.Drawing.SystemColors.Desktop;
+            this.btnProjectSave.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProjectSave.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnProjectSave.Image = global::TimeItCustomer.Properties.Resources.Save1;
+            this.btnProjectSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnProjectSave.Location = new System.Drawing.Point(0, 4);
+            this.btnProjectSave.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnProjectSave.Name = "btnProjectSave";
+            this.btnProjectSave.Size = new System.Drawing.Size(102, 30);
+            this.btnProjectSave.TabIndex = 12;
+            this.btnProjectSave.Text = "Spara";
+            this.btnProjectSave.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnProjectSave.UseVisualStyleBackColor = false;
+            this.btnProjectSave.Click += new System.EventHandler(this.btnProjectSave_Click);
+            // 
+            // btnProjectCancel
+            // 
+            this.btnProjectCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnProjectCancel.BackColor = System.Drawing.SystemColors.Desktop;
+            this.btnProjectCancel.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProjectCancel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnProjectCancel.Image = global::TimeItCustomer.Properties.Resources.Cancel;
+            this.btnProjectCancel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnProjectCancel.Location = new System.Drawing.Point(107, 4);
+            this.btnProjectCancel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnProjectCancel.Name = "btnProjectCancel";
+            this.btnProjectCancel.Size = new System.Drawing.Size(116, 30);
+            this.btnProjectCancel.TabIndex = 13;
+            this.btnProjectCancel.Text = "Avbryt";
+            this.btnProjectCancel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnProjectCancel.UseVisualStyleBackColor = false;
+            this.btnProjectCancel.Click += new System.EventHandler(this.btnProjectCancel_Click);
+            // 
+            // btnProjectEdit
+            // 
+            this.btnProjectEdit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnProjectEdit.BackColor = System.Drawing.SystemColors.Desktop;
+            this.btnProjectEdit.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProjectEdit.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnProjectEdit.Image = global::TimeItCustomer.Properties.Resources.Edit;
+            this.btnProjectEdit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnProjectEdit.Location = new System.Drawing.Point(107, 4);
+            this.btnProjectEdit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnProjectEdit.Name = "btnProjectEdit";
+            this.btnProjectEdit.Size = new System.Drawing.Size(116, 30);
+            this.btnProjectEdit.TabIndex = 8;
+            this.btnProjectEdit.Text = "Redigera";
+            this.btnProjectEdit.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnProjectEdit.UseVisualStyleBackColor = false;
+            this.btnProjectEdit.Visible = false;
+            this.btnProjectEdit.Click += new System.EventHandler(this.btnProjectEdit_Click);
             // 
             // gbUsers
             // 
@@ -651,6 +702,8 @@
             this.btnAddUser.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnAddUser.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Bold);
             this.btnAddUser.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnAddUser.Image = global::TimeItCustomer.Properties.Resources.Addition_;
+            this.btnAddUser.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAddUser.Location = new System.Drawing.Point(6, 30);
             this.btnAddUser.Name = "btnAddUser";
             this.btnAddUser.Size = new System.Drawing.Size(188, 35);
@@ -694,11 +747,11 @@
             this.gbTaskCounter.Controls.Add(this.btnTaskOpenClose);
             this.gbTaskCounter.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbTaskCounter.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.gbTaskCounter.Location = new System.Drawing.Point(937, 434);
+            this.gbTaskCounter.Location = new System.Drawing.Point(1054, 367);
             this.gbTaskCounter.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gbTaskCounter.Name = "gbTaskCounter";
             this.gbTaskCounter.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gbTaskCounter.Size = new System.Drawing.Size(111, 79);
+            this.gbTaskCounter.Size = new System.Drawing.Size(200, 64);
             this.gbTaskCounter.TabIndex = 11;
             this.gbTaskCounter.TabStop = false;
             this.gbTaskCounter.Text = "Tasks : 0";
@@ -709,12 +762,15 @@
             this.btnTaskOpenClose.BackColor = System.Drawing.SystemColors.Desktop;
             this.btnTaskOpenClose.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTaskOpenClose.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnTaskOpenClose.Location = new System.Drawing.Point(5, 23);
+            this.btnTaskOpenClose.Image = global::TimeItCustomer.Properties.Resources.Note_big_01_WF;
+            this.btnTaskOpenClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTaskOpenClose.Location = new System.Drawing.Point(22, 18);
             this.btnTaskOpenClose.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnTaskOpenClose.Name = "btnTaskOpenClose";
-            this.btnTaskOpenClose.Size = new System.Drawing.Size(93, 48);
+            this.btnTaskOpenClose.Size = new System.Drawing.Size(154, 40);
             this.btnTaskOpenClose.TabIndex = 0;
             this.btnTaskOpenClose.Text = "Öppna Tasks";
+            this.btnTaskOpenClose.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnTaskOpenClose.UseVisualStyleBackColor = false;
             this.btnTaskOpenClose.Click += new System.EventHandler(this.btnTask_Click);
             // 
@@ -842,14 +898,17 @@
             // btnAddNewActivity
             // 
             this.btnAddNewActivity.BackColor = System.Drawing.SystemColors.Desktop;
-            this.btnAddNewActivity.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddNewActivity.Font = new System.Drawing.Font("Arial", 7.5F, System.Drawing.FontStyle.Bold);
             this.btnAddNewActivity.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnAddNewActivity.Location = new System.Drawing.Point(213, 42);
+            this.btnAddNewActivity.Image = global::TimeItCustomer.Properties.Resources.Form_addll_01_WF;
+            this.btnAddNewActivity.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAddNewActivity.Location = new System.Drawing.Point(189, 35);
             this.btnAddNewActivity.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAddNewActivity.Name = "btnAddNewActivity";
-            this.btnAddNewActivity.Size = new System.Drawing.Size(156, 28);
+            this.btnAddNewActivity.Size = new System.Drawing.Size(175, 35);
             this.btnAddNewActivity.TabIndex = 2;
-            this.btnAddNewActivity.Text = "Skapa ny Aktivitet";
+            this.btnAddNewActivity.Text = "Skapa ny aktivitet";
+            this.btnAddNewActivity.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAddNewActivity.UseVisualStyleBackColor = false;
             this.btnAddNewActivity.Visible = false;
             this.btnAddNewActivity.Click += new System.EventHandler(this.btnAddNewActivity_Click);
@@ -1121,6 +1180,7 @@
             this.chkProjecktActive.TabIndex = 9;
             this.chkProjecktActive.Text = "Aktiv";
             this.chkProjecktActive.UseVisualStyleBackColor = true;
+            this.chkProjecktActive.Click += new System.EventHandler(this.chkProjecktActive_Click);
             // 
             // lblHideOkattAttestera
             // 
@@ -1216,32 +1276,20 @@
             this.chkProjectActivityDone.Text = "Klar";
             this.chkProjectActivityDone.UseVisualStyleBackColor = true;
             // 
-            // btnProjectSave
-            // 
-            this.btnProjectSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnProjectSave.BackColor = System.Drawing.SystemColors.Desktop;
-            this.btnProjectSave.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnProjectSave.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnProjectSave.Location = new System.Drawing.Point(1084, 521);
-            this.btnProjectSave.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnProjectSave.Name = "btnProjectSave";
-            this.btnProjectSave.Size = new System.Drawing.Size(75, 28);
-            this.btnProjectSave.TabIndex = 12;
-            this.btnProjectSave.Text = "Spara";
-            this.btnProjectSave.UseVisualStyleBackColor = false;
-            this.btnProjectSave.Click += new System.EventHandler(this.btnProjectSave_Click);
-            // 
             // btnProjectNew
             // 
             this.btnProjectNew.BackColor = System.Drawing.SystemColors.Desktop;
-            this.btnProjectNew.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProjectNew.Font = new System.Drawing.Font("Arial", 7.5F, System.Drawing.FontStyle.Bold);
             this.btnProjectNew.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnProjectNew.Location = new System.Drawing.Point(9, 42);
+            this.btnProjectNew.Image = global::TimeItCustomer.Properties.Resources.Form_add_01_WF;
+            this.btnProjectNew.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnProjectNew.Location = new System.Drawing.Point(9, 35);
             this.btnProjectNew.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnProjectNew.Name = "btnProjectNew";
-            this.btnProjectNew.Size = new System.Drawing.Size(156, 28);
+            this.btnProjectNew.Size = new System.Drawing.Size(175, 35);
             this.btnProjectNew.TabIndex = 1;
-            this.btnProjectNew.Text = "Skapa nytt Projekt";
+            this.btnProjectNew.Text = "Skapa nytt uppdrag";
+            this.btnProjectNew.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnProjectNew.UseVisualStyleBackColor = false;
             this.btnProjectNew.Visible = false;
             this.btnProjectNew.Click += new System.EventHandler(this.btnProjectNew_Click);
@@ -1337,6 +1385,7 @@
             this.txtProjectPrice.Name = "txtProjectPrice";
             this.txtProjectPrice.Size = new System.Drawing.Size(159, 23);
             this.txtProjectPrice.TabIndex = 1;
+            this.txtProjectPrice.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtProjectPrice_KeyUp);
             // 
             // lblProjcetPriceStatus
             // 
@@ -1519,37 +1568,6 @@
             this.txtProjectDescription.TabIndex = 1;
             this.txtProjectDescription.TextChanged += new System.EventHandler(this.txtProjectDescription_TextChanged);
             // 
-            // btnProjectCancel
-            // 
-            this.btnProjectCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnProjectCancel.BackColor = System.Drawing.SystemColors.Desktop;
-            this.btnProjectCancel.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnProjectCancel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnProjectCancel.Location = new System.Drawing.Point(1163, 521);
-            this.btnProjectCancel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnProjectCancel.Name = "btnProjectCancel";
-            this.btnProjectCancel.Size = new System.Drawing.Size(91, 28);
-            this.btnProjectCancel.TabIndex = 13;
-            this.btnProjectCancel.Text = "Avbryt";
-            this.btnProjectCancel.UseVisualStyleBackColor = false;
-            this.btnProjectCancel.Click += new System.EventHandler(this.btnProjectCancel_Click);
-            // 
-            // btnProjectEdit
-            // 
-            this.btnProjectEdit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnProjectEdit.BackColor = System.Drawing.SystemColors.Desktop;
-            this.btnProjectEdit.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnProjectEdit.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnProjectEdit.Location = new System.Drawing.Point(1163, 521);
-            this.btnProjectEdit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnProjectEdit.Name = "btnProjectEdit";
-            this.btnProjectEdit.Size = new System.Drawing.Size(91, 28);
-            this.btnProjectEdit.TabIndex = 8;
-            this.btnProjectEdit.Text = "Redigera";
-            this.btnProjectEdit.UseVisualStyleBackColor = false;
-            this.btnProjectEdit.Visible = false;
-            this.btnProjectEdit.Click += new System.EventHandler(this.btnProjectEdit_Click);
-            // 
             // gbContacts
             // 
             this.gbContacts.BackColor = System.Drawing.SystemColors.ControlLight;
@@ -1567,16 +1585,39 @@
             this.gbContacts.TabStop = false;
             this.gbContacts.Text = "Kontakter";
             // 
-            // pb
+            // btnContactEdit
             // 
-            this.pb.Image = global::TimeItCustomer.Properties.Resources.LogoCore;
-            this.pb.Location = new System.Drawing.Point(1532, 12);
-            this.pb.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pb.Name = "pb";
-            this.pb.Size = new System.Drawing.Size(400, 120);
-            this.pb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pb.TabIndex = 10;
-            this.pb.TabStop = false;
+            this.btnContactEdit.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btnContactEdit.BackColor = System.Drawing.SystemColors.Desktop;
+            this.btnContactEdit.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnContactEdit.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnContactEdit.Image = global::TimeItCustomer.Properties.Resources.Edit;
+            this.btnContactEdit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnContactEdit.Location = new System.Drawing.Point(343, 234);
+            this.btnContactEdit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnContactEdit.Name = "btnContactEdit";
+            this.btnContactEdit.Size = new System.Drawing.Size(135, 30);
+            this.btnContactEdit.TabIndex = 2;
+            this.btnContactEdit.Text = "Redigera";
+            this.btnContactEdit.UseVisualStyleBackColor = false;
+            this.btnContactEdit.Click += new System.EventHandler(this.btnContactEdit_Click);
+            // 
+            // btnContactAdd
+            // 
+            this.btnContactAdd.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btnContactAdd.BackColor = System.Drawing.SystemColors.Desktop;
+            this.btnContactAdd.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnContactAdd.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnContactAdd.Image = global::TimeItCustomer.Properties.Resources.Addition_;
+            this.btnContactAdd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnContactAdd.Location = new System.Drawing.Point(299, 22);
+            this.btnContactAdd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnContactAdd.Name = "btnContactAdd";
+            this.btnContactAdd.Size = new System.Drawing.Size(149, 30);
+            this.btnContactAdd.TabIndex = 1;
+            this.btnContactAdd.Text = "Ny kontakt";
+            this.btnContactAdd.UseVisualStyleBackColor = false;
+            this.btnContactAdd.Click += new System.EventHandler(this.btnContactAdd_Click);
             // 
             // toolTipStartDatumClear
             // 
@@ -1599,6 +1640,17 @@
             this.tableAdapterManager1.tasksTableAdapter = null;
             this.tableAdapterManager1.UpdateOrder = TimeItCustomer.DsCustomerTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             this.tableAdapterManager1.usersTableAdapter = null;
+            // 
+            // pb
+            // 
+            this.pb.Image = global::TimeItCustomer.Properties.Resources.LogoCore;
+            this.pb.Location = new System.Drawing.Point(1532, 12);
+            this.pb.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pb.Name = "pb";
+            this.pb.Size = new System.Drawing.Size(400, 120);
+            this.pb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pb.TabIndex = 10;
+            this.pb.TabStop = false;
             // 
             // Form1
             // 
@@ -1625,6 +1677,7 @@
             this.gbCustomerPrice.PerformLayout();
             this.gbProject.ResumeLayout(false);
             this.gbProject.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
             this.gbUsers.ResumeLayout(false);
             this.gbTaskCounter.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
@@ -1762,6 +1815,7 @@
         private System.Windows.Forms.GroupBox gbUsers;
         private System.Windows.Forms.ListBox lbUsers;
         private System.Windows.Forms.Button btnPriceOpen;
+        private System.Windows.Forms.GroupBox groupBox3;
     }
 }
 

@@ -33,6 +33,8 @@ namespace TimeItCustomer
         private int maxID;
         private float _overtime1;
         private float _overtime2;
+        private bool _setChildrenActive;
+        private bool _setChildrenInactive;
 
         private enum activityStatus
         {
@@ -224,10 +226,12 @@ namespace TimeItCustomer
             {
                 if (listboxCustomers.SelectedItem != null)
                 {
-                    // Måste möjligtvis stänga av eventet efter att det är subrscribat?
-                    priceWindow = new PriceWindow((int)listboxCustomers.SelectedValue, (int)projectType.projekt, (int)projectType.uppdrag, Convert.ToInt32(txtCustomerStdHourlyPrice.Text), Convert.ToInt32(txtCustomerStdOvetTime1.Text), Convert.ToInt32(txtCustomerStdOvetTime2.Text));
+
+                    priceWindow = new PriceWindow((int)listboxCustomers.SelectedValue, (int)projectType.projekt, (int)projectType.uppdrag, float.Parse(txtCustomerStdHourlyPrice.Text), float.Parse(txtCustomerStdOvetTime1.Text), float.Parse(txtCustomerStdOvetTime2.Text));
                     priceWindow.CustomEvent += new PriceWindow.CustomDelegate(ms_CustomEventPriceWindow);
                     priceWindow.ShowDialog();
+
+
                 }
             }
             catch (Exception ex)
@@ -334,6 +338,12 @@ namespace TimeItCustomer
 
         #region ProjectEvent
 
+        private void chkProjecktActive_Click(object sender, EventArgs e)
+        {
+            if(Edit == true)
+            SetChildrenActiveOrInactive();
+        }
+
         private void chkProjectInActive_CheckedChanged(object sender, EventArgs e)
         {
             GetCustomerProjectData();
@@ -343,7 +353,7 @@ namespace TimeItCustomer
         {
             Edit = false;
             ClearProjectData();
-            
+
             SetNewProjectDefaultPrice();
 
             PopulateProjectPriceStatusComboBox();
@@ -357,7 +367,7 @@ namespace TimeItCustomer
             chkProjecktOkToAttest.Checked = true;
             chkProjecktOkToTidredovisa.Checked = true;
             treeViewProjects.SelectedNode = null;
-           
+
             gbTaskCounter.Visible = false;
             EnableDisableProjectControls(true);
             comboBoxProjectPriceStatus.SelectedIndex = 0;
@@ -400,13 +410,13 @@ namespace TimeItCustomer
                 NewTreeNodeAutoSelect(IdOnNodeThatIsEdit, false);
             }
             PopulateProjectInfo();
-           
+
             EnableDisableProjectControls(false);
         }
 
         private void btnProjectCancel_Click(object sender, EventArgs e)
         {
-           
+
 
             if (treeViewProjects.SelectedNode == null)
             {
@@ -437,7 +447,7 @@ namespace TimeItCustomer
             gbTaskCounter.Visible = false;
             gbTaskCounter.Text = "Tasks : 0";
             treeViewProjects.SelectedNode = treeViewProjects.GetNodeAt(e.X, e.Y);
-            
+            ClearProjectData();
 
             try
             {
@@ -540,6 +550,15 @@ namespace TimeItCustomer
         {
             ChangeCbTypColor();
             EnableDisableProjectControls(true);
+        }
+
+        private void txtProjectPrice_KeyUp(object sender, KeyEventArgs e)
+        {
+            float.TryParse(txtProjectPrice.Text, out _overtime1);
+            txtProjectOverTime1.Text = (_overtime1 * 1.5f).ToString();
+
+            float.TryParse(txtProjectPrice.Text, out _overtime2);
+            txtProjectOverTime2.Text = (_overtime2 * 2f).ToString();
         }
 
         #endregion
@@ -656,7 +675,7 @@ namespace TimeItCustomer
                     CustomerAdapter.Update(cTable);
                     int CustomerEdit = (int)listboxCustomers.SelectedValue;
                     PopulateCustomer();
-                    
+
                     CustomerAdapter.Dispose();
                     listboxCustomers.SelectedValue = CustomerEdit;
                 }
@@ -666,7 +685,7 @@ namespace TimeItCustomer
             {
                 MessageBox.Show(ex.ToString());
             }
-           
+
         }
         private void SetCustomersData(customersRow cRow)
         {
@@ -692,7 +711,7 @@ namespace TimeItCustomer
                 btnPriceOpen.Visible = !state;
                 btnCustomerEdit.Visible = !state;
             }
-               
+
             if (string.IsNullOrWhiteSpace(txtCustomerName.Text) != true && state == true)
                 btnCustomerSave.Visible = state;
             else
@@ -765,7 +784,7 @@ namespace TimeItCustomer
             try
             {
                 //Opens upp the contact dialog for edit and sets the propertys in ContactDialog
-               using (ContactDialog cd = new ContactDialog(firstName, lastName))
+                using (ContactDialog cd = new ContactDialog(firstName, lastName))
                 {
                     cd.ShowDialog();
                     if (cd.SaveContact == true)
@@ -836,6 +855,51 @@ namespace TimeItCustomer
         #endregion
 
         #region ProjectMethods
+
+        private void SetChildrenActiveOrInactive()
+        {
+            //Counts the ParentID matching the parents ID 
+            ActivitiesAdapter = new activitiesTableAdapter();
+            int? count = ActivitiesAdapter.GetCountOnParentID((int)treeViewProjects.SelectedNode.Tag);
+            ActivitiesAdapter.Dispose();
+
+            if (count != null && count > 0 )
+            {
+                if (chkProjecktActive.Checked)
+                {
+                    var confirmResult = MessageBox.Show("Vill du ändra alla kopplade aktiviteter till aktiv?",
+                                         "Ändra kopplade aktiviteter till aktiv",
+                                         MessageBoxButtons.YesNo);
+                    if (confirmResult == DialogResult.Yes)
+                    {
+                        _setChildrenActive = true;
+                        _setChildrenInactive = false;
+                    }
+                    else
+                    {
+                        _setChildrenInactive = false;
+                        _setChildrenActive = false;
+                    }
+                }
+                else
+                {
+                    var confirmResult = MessageBox.Show("Vill du ändra alla kopplade aktiviteter till inaktiv?",
+                                         "Ändra kopplade aktiviteter till inaktiv",
+                                         MessageBoxButtons.YesNo);
+                    if (confirmResult == DialogResult.Yes)
+                    {
+                        _setChildrenInactive = true;
+                        _setChildrenActive = false;
+                    }
+                    else
+                    {
+                        _setChildrenInactive = false;
+                        _setChildrenActive = false;
+                    }
+                }
+            }
+        }
+
         private void SetTimeClassificationByDeafultUser()
         {
             string[] useArr = System.Security.Principal.WindowsIdentity.GetCurrent().Name.Split('\\');
@@ -846,7 +910,7 @@ namespace TimeItCustomer
 
             usersRow usr = (usersRow)usrDt.Rows[0];
 
-            if(usr.department == "Systemutveckling")
+            if (usr.department == "Systemutveckling")
             {
                 comboBoxKlassificiering.SelectedValue = timeClassification.Systemutveckling;
             }
@@ -988,7 +1052,7 @@ namespace TimeItCustomer
 
             if (treeViewProjects.SelectedNode != null)
                 btnProjectEdit.Visible = !state;
-            
+
             if (treeViewProjects.SelectedNode == null)
             {
                 btnAddNewActivity.Visible = false;
@@ -1035,7 +1099,7 @@ namespace TimeItCustomer
                     btnAddNewActivity.Visible = false;
                 }
             }
-         
+
             comboBoxProjectType.Visible = state;
             cbProjectManager.Visible = state;
             comboBoxKlassificiering.Visible = state;
@@ -1177,15 +1241,17 @@ namespace TimeItCustomer
                 aRow.projectManagerID = (int)cbProjectManager.SelectedValue;
                 aRow.invoiceUserID = (int)cbAttest.SelectedValue;
                 aRow.contactID = (int)cbCustomerContactRef.SelectedValue;
-               
 
-                int budget;
-                float over1, over2, price, pricefix;
+
+                int budegetHour;
+                float over1, over2, price, pricefix, calBudegetHour;
                 DateTime start, stop;
                 aRow.description = txtProjectDescription.Text;
                 aRow.remark = txtProjectRemark.Text;
-                int.TryParse(txtProjectBudgetHours.Text, out budget);
-                aRow.budgetHours = budget;
+                int.TryParse(txtProjectBudgetHours.Text, out budegetHour);
+                aRow.budgetHours = budegetHour;
+                float.TryParse(txtProjectCalculatedHours.Text, out calBudegetHour);
+                aRow.calculatedHours = calBudegetHour;
                 float.TryParse(txtProjectOverTime1.Text, out over1);
                 aRow.overtime1 = over1;
                 float.TryParse(txtProjectOverTime2.Text, out over2);
@@ -1205,7 +1271,7 @@ namespace TimeItCustomer
                 else
                 {
                     _setStartDateToNull = true;
-                   
+
                 }
 
                 if (!dtpProjectStopDate.Value.Equals(DateTime.Parse("1900-01-01 00:00:00")))
@@ -1247,7 +1313,7 @@ namespace TimeItCustomer
 
                 aRow.priceStatus = (int)comboBoxProjectPriceStatus.SelectedValue;
                 aRow.timeClassificationID = (int)comboBoxKlassificiering.SelectedValue;
-                aRow.type = (int)comboBoxProjectType.SelectedValue; ;
+                aRow.type = (int)comboBoxProjectType.SelectedValue;
 
 
                 aRow.customerID = (int)listboxCustomers.SelectedValue;
@@ -1257,11 +1323,13 @@ namespace TimeItCustomer
                     activitiesRow maxRow = (activitiesRow)_maxTable.Rows[0];
                     maxID = maxRow.ID;
                 }
-                if(ID == 0)
+                //Creates Project & Uppdrag
+                if (ID == 0)
                 {
-                  aRow.rootID = maxID+1;
-                  aTables.Rows.Add(aRow);
+                    aRow.rootID = maxID + 1;
+                    aTables.Rows.Add(aRow);
                 }
+                //Creates Activity
                 if (CreatingNewActivity)
                 {
                     aRow.parentID = ID;
@@ -1274,13 +1342,25 @@ namespace TimeItCustomer
                 ActivitiesAdapter.Dispose();
                 //treeViewProjects.Nodes.Clear();
 
+                if (_setChildrenActive)
+                {
+                    ActivitiesAdapter.UpdateChildrenStatusActive(ID);
+                    ActivitiesAdapter.Dispose();
+                }
+                if (_setChildrenInactive)
+                {
+                    ActivitiesAdapter.UpdateChildrenStatusInActive(ID);
+                    ActivitiesAdapter.Dispose();
+                }
+
+                
                 if (_setStartDateToNull == true)
                 {
                     ActivitiesAdapter.UpdateStartDateByID(ID);
                     ActivitiesAdapter.Dispose();
                 }
 
-                if(_setStopDateToNull == true)
+                if (_setStopDateToNull == true)
                 {
                     ActivitiesAdapter.UpdateStopDateByID(ID);
                     ActivitiesAdapter.Dispose();
@@ -1292,6 +1372,10 @@ namespace TimeItCustomer
                 MessageBox.Show(ex.ToString());
             }
         }
+
+
+
+
         /// <summary>
         /// Gets the customers project data
         /// </summary>
@@ -1310,7 +1394,7 @@ namespace TimeItCustomer
                     activitiesDataTable ActivitiesTables = ActivitiesAdapter.GetProjectInfoByID((int)treeViewProjects.SelectedNode.Tag);
                     activitiesRow projectRow = (activitiesRow)ActivitiesTables.Rows[0];
                     ActivitiesTables.Dispose();
-                    
+
                     ProjectManagerID = projectRow.projectManagerID;
                     ProjectsContactID = projectRow.contactID;
                     ProjectAttestID = projectRow.invoiceUserID;
@@ -1414,7 +1498,7 @@ namespace TimeItCustomer
                     {
                         comboBoxProjectPriceStatus.SelectedValue = activityPriceStatus.absence;
                     }
-                    comboBoxKlassificiering.SelectedIndex = projectRow.timeClassificationID-1;
+                    comboBoxKlassificiering.SelectedIndex = projectRow.timeClassificationID - 1;
 
                     //Checks the project type --------------------------------------------------------------
                     if (projectRow.parentID.Equals(0) && treeViewProjects.SelectedNode.Nodes.Count <= 0)
@@ -1430,7 +1514,7 @@ namespace TimeItCustomer
                         PopulateProjectTypeComboBox(typeSwitch.aktivitet);
                     }
 
-                    
+
                     if (projectRow.type.Equals(projectRow.type | (int)projectType.projekt))
                     {
                         comboBoxProjectType.SelectedValue = projectType.projekt;
@@ -1464,7 +1548,7 @@ namespace TimeItCustomer
         {
             try
             {
-             
+
                 if (ChangeByID != 0)
                 {
                     UsersAdapter = new usersTableAdapter();
@@ -1615,13 +1699,13 @@ namespace TimeItCustomer
                 MessageBox.Show(ex.ToString());
             }
         }
-        
+
         /// <summary>
         /// Finds and select the newest or the latest edited project or activity
         /// </summary>
         /// <param name="Id"></param>
         /// <param name="Create"></param>
-        private void NewTreeNodeAutoSelect(int Id , bool Create)
+        private void NewTreeNodeAutoSelect(int Id, bool Create)
         {
             try
             {
@@ -1632,7 +1716,7 @@ namespace TimeItCustomer
                     {
                         foreach (TreeNode childnode in node.Nodes)
                         {
-                            if (((int)childnode.Tag == Id+1 && Create == true) || ((int)childnode.Tag == Id && Create == false))
+                            if (((int)childnode.Tag == Id + 1 && Create == true) || ((int)childnode.Tag == Id && Create == false))
                             {
                                 activityID = Id;
                                 treeViewProjects.SelectedNode = childnode;
@@ -1671,7 +1755,7 @@ namespace TimeItCustomer
         #region UserEvents
         private void btnAddUser_Click(object sender, EventArgs e)
         {
-            if(treeViewProjects.SelectedNode != null)
+            if (treeViewProjects.SelectedNode != null)
             {
                 AddSelectedUserToAktivitet();
                 PopulateAssociatedUserToList((int)treeViewProjects.SelectedNode.Tag);
@@ -1708,7 +1792,7 @@ namespace TimeItCustomer
                 cbUsers.SelectedIndex = -1;
                 userAdapter.Dispose();
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.ToString());
             }
@@ -1730,7 +1814,7 @@ namespace TimeItCustomer
                 lbUsers.SelectedIndex = -1;
                 userAdapter.Dispose();
             }
-          catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.ToString());
             }
@@ -1742,7 +1826,7 @@ namespace TimeItCustomer
         {
             try
             {
-                if(cbUsers.SelectedItem != null)
+                if (cbUsers.SelectedItem != null)
                 {
                     activityUsersTableAdapter ActivityUserAdapter = new activityUsersTableAdapter();
                     activityUsersDataTable activityUserTable = ActivityUserAdapter.AddActivityUser();
@@ -1759,9 +1843,9 @@ namespace TimeItCustomer
                     ActivityUserAdapter.Dispose();
                     lbUsers.DataSource = null;
                 }
-              
+
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.ToString());
             }
@@ -1769,8 +1853,14 @@ namespace TimeItCustomer
 
 
 
+
+
+
+
+
         #endregion
 
         
+      
     }
 }

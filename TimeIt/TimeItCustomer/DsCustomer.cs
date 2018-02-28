@@ -31,9 +31,12 @@ namespace TimeItCustomer {
     }
 }
 
-namespace TimeItCustomer.DsCustomerTableAdapters {
-    
-    
+namespace TimeItCustomer.DsCustomerTableAdapters
+{
+    partial class activitiesTableAdapter
+    {
+    }
+
     public partial class contactsTableAdapter {
     }
 }

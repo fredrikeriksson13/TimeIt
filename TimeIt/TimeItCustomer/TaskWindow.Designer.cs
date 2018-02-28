@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.gbTaskwindow = new System.Windows.Forms.GroupBox();
-            this.btnRevert = new System.Windows.Forms.Button();
             this.dgvTask = new System.Windows.Forms.DataGridView();
             this.btnTaskCancel = new System.Windows.Forms.Button();
-            this.btnTaskSave = new System.Windows.Forms.Button();
             this.btnTaskEdit = new System.Windows.Forms.Button();
+            this.btnRevert = new System.Windows.Forms.Button();
+            this.btnTaskSave = new System.Windows.Forms.Button();
             this.gbTaskwindow.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTask)).BeginInit();
             this.SuspendLayout();
@@ -46,8 +46,8 @@
             this.gbTaskwindow.BackColor = System.Drawing.SystemColors.ControlLight;
             this.gbTaskwindow.Controls.Add(this.btnRevert);
             this.gbTaskwindow.Controls.Add(this.dgvTask);
-            this.gbTaskwindow.Controls.Add(this.btnTaskCancel);
             this.gbTaskwindow.Controls.Add(this.btnTaskSave);
+            this.gbTaskwindow.Controls.Add(this.btnTaskCancel);
             this.gbTaskwindow.Controls.Add(this.btnTaskEdit);
             this.gbTaskwindow.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbTaskwindow.ForeColor = System.Drawing.SystemColors.ControlText;
@@ -58,20 +58,6 @@
             this.gbTaskwindow.TabIndex = 10;
             this.gbTaskwindow.TabStop = false;
             this.gbTaskwindow.Text = "Task";
-            // 
-            // btnRevert
-            // 
-            this.btnRevert.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnRevert.BackColor = System.Drawing.SystemColors.ControlText;
-            this.btnRevert.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRevert.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnRevert.Location = new System.Drawing.Point(874, 17);
-            this.btnRevert.Name = "btnRevert";
-            this.btnRevert.Size = new System.Drawing.Size(90, 28);
-            this.btnRevert.TabIndex = 15;
-            this.btnRevert.Text = "Återställ";
-            this.btnRevert.UseVisualStyleBackColor = false;
-            this.btnRevert.Click += new System.EventHandler(this.btnRevert_Click_1);
             // 
             // dgvTask
             // 
@@ -99,27 +85,16 @@
             this.btnTaskCancel.BackColor = System.Drawing.SystemColors.ControlText;
             this.btnTaskCancel.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTaskCancel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnTaskCancel.Location = new System.Drawing.Point(874, 510);
+            this.btnTaskCancel.Image = global::TimeItCustomer.Properties.Resources.Cancel;
+            this.btnTaskCancel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTaskCancel.Location = new System.Drawing.Point(860, 510);
             this.btnTaskCancel.Name = "btnTaskCancel";
-            this.btnTaskCancel.Size = new System.Drawing.Size(90, 28);
+            this.btnTaskCancel.Size = new System.Drawing.Size(104, 30);
             this.btnTaskCancel.TabIndex = 10;
             this.btnTaskCancel.Text = "Stäng";
+            this.btnTaskCancel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnTaskCancel.UseVisualStyleBackColor = false;
             this.btnTaskCancel.Click += new System.EventHandler(this.btnTaskCancel_Click);
-            // 
-            // btnTaskSave
-            // 
-            this.btnTaskSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnTaskSave.BackColor = System.Drawing.SystemColors.ControlText;
-            this.btnTaskSave.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTaskSave.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnTaskSave.Location = new System.Drawing.Point(793, 510);
-            this.btnTaskSave.Name = "btnTaskSave";
-            this.btnTaskSave.Size = new System.Drawing.Size(75, 28);
-            this.btnTaskSave.TabIndex = 9;
-            this.btnTaskSave.Text = "Spara";
-            this.btnTaskSave.UseVisualStyleBackColor = false;
-            this.btnTaskSave.Click += new System.EventHandler(this.btnTaskSave_Click_1);
             // 
             // btnTaskEdit
             // 
@@ -127,12 +102,49 @@
             this.btnTaskEdit.BackColor = System.Drawing.SystemColors.ControlText;
             this.btnTaskEdit.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTaskEdit.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnTaskEdit.Location = new System.Drawing.Point(874, 510);
+            this.btnTaskEdit.Image = global::TimeItCustomer.Properties.Resources.Edit;
+            this.btnTaskEdit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTaskEdit.Location = new System.Drawing.Point(860, 510);
             this.btnTaskEdit.Name = "btnTaskEdit";
-            this.btnTaskEdit.Size = new System.Drawing.Size(90, 28);
+            this.btnTaskEdit.Size = new System.Drawing.Size(104, 30);
             this.btnTaskEdit.TabIndex = 11;
             this.btnTaskEdit.Text = "Redigera";
+            this.btnTaskEdit.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnTaskEdit.UseVisualStyleBackColor = false;
+            // 
+            // btnRevert
+            // 
+            this.btnRevert.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnRevert.BackColor = System.Drawing.SystemColors.ControlText;
+            this.btnRevert.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRevert.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnRevert.Image = global::TimeItCustomer.Properties.Resources.Red_restore;
+            this.btnRevert.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRevert.Location = new System.Drawing.Point(851, 17);
+            this.btnRevert.Name = "btnRevert";
+            this.btnRevert.Size = new System.Drawing.Size(113, 28);
+            this.btnRevert.TabIndex = 15;
+            this.btnRevert.Text = "Återställ";
+            this.btnRevert.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnRevert.UseVisualStyleBackColor = false;
+            this.btnRevert.Click += new System.EventHandler(this.btnRevert_Click_1);
+            // 
+            // btnTaskSave
+            // 
+            this.btnTaskSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnTaskSave.BackColor = System.Drawing.SystemColors.ControlText;
+            this.btnTaskSave.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTaskSave.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnTaskSave.Image = global::TimeItCustomer.Properties.Resources.Save1;
+            this.btnTaskSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTaskSave.Location = new System.Drawing.Point(759, 510);
+            this.btnTaskSave.Name = "btnTaskSave";
+            this.btnTaskSave.Size = new System.Drawing.Size(95, 30);
+            this.btnTaskSave.TabIndex = 9;
+            this.btnTaskSave.Text = "Spara";
+            this.btnTaskSave.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnTaskSave.UseVisualStyleBackColor = false;
+            this.btnTaskSave.Click += new System.EventHandler(this.btnTaskSave_Click_1);
             // 
             // TaskWindow
             // 

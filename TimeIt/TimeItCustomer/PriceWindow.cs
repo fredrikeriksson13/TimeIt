@@ -26,15 +26,15 @@ namespace TimeItCustomer
         private int CustomerID;
         private int project;
         private int uppdrag;
-        private int deafalultPrice;
-        private int defaultOvertime1;
-        private int defaultOvertime2;
+        private float deafalultPrice;
+        private float defaultOvertime1;
+        private float defaultOvertime2;
         private float _price;
         private float _overtime1;
         private float _overtime2;
         private int _counter;
 
-        public PriceWindow(int _customerID, int _project, int _uppdrag, int _deafultPrice, int _deafaultOvertime1, int _defaultOvertime2)
+        public PriceWindow(int _customerID, int _project, int _uppdrag, float _deafultPrice, float _deafaultOvertime1, float _defaultOvertime2)
 
         {
             InitializeComponent();
@@ -71,7 +71,7 @@ namespace TimeItCustomer
                 }
             }
 
-            lblCounter.Text = "Antal ibockade :" + _counter;
+            lblCounter.Text = "Antal ibockade : " + _counter;
         }
 
         private void SavePriceChanges()

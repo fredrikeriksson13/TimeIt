@@ -136,6 +136,19 @@
     <None Include="Resources\LogoCore.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Addition .png" />
+    <None Include="Resources\Black_MoneyBag.png" />
+    <None Include="Resources\Save-01.png" />
+    <None Include="Resources\Edit.png" />
+    <None Include="Resources\Cancel.png" />
+    <None Include="Resources\Save.png" />
+    <None Include="Resources\Save1.png" />
+    <None Include="Resources\Form add-01-WF.png" />
+    <None Include="Resources\Form addll-01-WF.png" />
+    <None Include="Resources\Save2.png" />
+    <None Include="Resources\Red_restore.png" />
+    <None Include="Resources\Note memo-01-WF.png" />
+    <None Include="Resources\Note big-01-WF.png" />
     <Content Include="_documentation\info.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

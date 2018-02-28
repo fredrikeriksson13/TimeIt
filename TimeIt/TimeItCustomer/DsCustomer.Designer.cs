@@ -4985,7 +4985,7 @@ SELECT ID, customerName, address, orgNumber, stdHourlyPrice, stdOvertime1, stdOv
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT ID, customerName, address, orgNumber, stdHourlyPrice, stdOvertime1, stdOve" +
-                "rtime2\r\nFROM     customers";
+                "rtime2\nFROM     customers";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[1].Connection = this.Connection;
@@ -5002,11 +5002,11 @@ SELECT ID, customerName, address, orgNumber, stdHourlyPrice, stdOvertime1, stdOv
             this._commandCollection[3] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[3].Connection = this.Connection;
             this._commandCollection[3].CommandText = "SELECT ID, address, customerName, orgNumber, stdHourlyPrice, stdOvertime1, stdOve" +
-                "rtime2 FROM customers\r\nOrder by customerName";
+                "rtime2 FROM customers\nOrder by customerName";
             this._commandCollection[3].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[4] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[4].Connection = this.Connection;
-            this._commandCollection[4].CommandText = "SELECT ID\r\nFROM     customers\r\nWHERE ID = (SELECT MAX(ID) FROM customers)\r\n";
+            this._commandCollection[4].CommandText = "SELECT ID\nFROM     customers\nWHERE ID = (SELECT MAX(ID) FROM customers)\n";
             this._commandCollection[4].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -5646,11 +5646,11 @@ SELECT ID, customerID, contactID, parentID, rootID, description, remark, type, p
                 "riginal_invoiceDescription)) AND ((@IsNull_projectManagerID = 1 AND [projectMana" +
                 "gerID] IS NULL) OR ([projectManagerID] = @Original_projectManagerID)) AND ((@IsN" +
                 "ull_estimatedHours = 1 AND [estimatedHours] IS NULL) OR ([estimatedHours] = @Ori" +
-                "ginal_estimatedHours)));\r\nSELECT ID, customerID, contactID, parentID, rootID, de" +
-                "scription, remark, type, price, overtime1, overtime2, price_fixed, priceStatus, " +
-                "budgetHours, timeClassificationID, status, changedBy, changeDate, invoiceUserID," +
-                " startDate, stopDate, tfsProject, calculatedHours, invoiceDescription, projectMa" +
-                "nagerID, estimatedHours FROM activities WHERE (ID = @ID)";
+                "ginal_estimatedHours)));\nSELECT ID, customerID, contactID, parentID, rootID, des" +
+                "cription, remark, type, price, overtime1, overtime2, price_fixed, priceStatus, b" +
+                "udgetHours, timeClassificationID, status, changedBy, changeDate, invoiceUserID, " +
+                "startDate, stopDate, tfsProject, calculatedHours, invoiceDescription, projectMan" +
+                "agerID, estimatedHours FROM activities WHERE (ID = @ID)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@customerID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "customerID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@contactID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "contactID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -5739,7 +5739,7 @@ SELECT ID, customerID, contactID, parentID, rootID, description, remark, type, p
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[14];
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[17];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = @"SELECT ID, customerID, contactID, parentID, rootID, description, remark, type, price, overtime1, overtime2, price_fixed, priceStatus, budgetHours, timeClassificationID, status, changedBy, changeDate, invoiceUserID, startDate, 
@@ -5748,14 +5748,14 @@ FROM     activities";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[1].Connection = this.Connection;
-            this._commandCollection[1].CommandText = "select ID from activities\r\nwhere ((price = @price) AND (customerID = @ID))";
+            this._commandCollection[1].CommandText = "select ID from activities\nwhere ((price = @price) AND (customerID = @ID))";
             this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@price", global::System.Data.SqlDbType.Float, 8, global::System.Data.ParameterDirection.Input, 0, 0, "price", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "customerID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[2] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[2].Connection = this.Connection;
-            this._commandCollection[2].CommandText = "SELECT ID, price, overtime1, overtime2\r\nFROM     activities\r\nwhere (CustomerID = " +
-                "@CustomerID)";
+            this._commandCollection[2].CommandText = "SELECT ID, price, overtime1, overtime2\nFROM     activities\nwhere (CustomerID = @C" +
+                "ustomerID)";
             this._commandCollection[2].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@CustomerID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "customerID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[3] = new global::System.Data.SqlClient.SqlCommand();
@@ -5784,48 +5784,64 @@ WHERE (customerID = @ID)";
             this._commandCollection[5].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "customerID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[6] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[6].Connection = this.Connection;
-            this._commandCollection[6].CommandText = "SELECT ID\r\nFROM     activities\r\nWHERE ID = (SELECT MAX(ID) FROM activities)\r\n";
+            this._commandCollection[6].CommandText = "SELECT COUNT(parentID)\r\nFROM activities\r\nWHERE (parentID = @ID)";
             this._commandCollection[6].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[6].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "parentID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[7] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[7].Connection = this.Connection;
-            this._commandCollection[7].CommandText = "SELECT ID, customerID, parentID, type\r\nFROM     activities\r\nwhere (ID =@customerI" +
-                "D)";
+            this._commandCollection[7].CommandText = "SELECT ID\nFROM     activities\nWHERE ID = (SELECT MAX(ID) FROM activities)\n";
             this._commandCollection[7].CommandType = global::System.Data.CommandType.Text;
-            this._commandCollection[7].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@customerID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "ID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[8] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[8].Connection = this.Connection;
-            this._commandCollection[8].CommandText = @"SELECT ID, customerID, contactID, parentID, rootID, description, remark, type, price, overtime1, overtime2, price_fixed, priceStatus, budgetHours, timeClassificationID, status, changedBy, changeDate, invoiceUserID, startDate, 
-                  stopDate, tfsProject, calculatedHours, invoiceDescription, projectManagerID, estimatedHours
-FROM     activities
-where (ID = @customerID)";
+            this._commandCollection[8].CommandText = "SELECT ID, customerID, parentID, type\nFROM     activities\nwhere (ID =@customerID)" +
+                "";
             this._commandCollection[8].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[8].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@customerID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "ID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[9] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[9].Connection = this.Connection;
-            this._commandCollection[9].CommandText = "SELECT ID, description from activities\r\nwhere (customerID = @ID) and ParentID = 0" +
-                "";
+            this._commandCollection[9].CommandText = @"SELECT ID, customerID, contactID, parentID, rootID, description, remark, type, price, overtime1, overtime2, price_fixed, priceStatus, budgetHours, timeClassificationID, status, changedBy, changeDate, invoiceUserID, startDate, 
+                  stopDate, tfsProject, calculatedHours, invoiceDescription, projectManagerID, estimatedHours
+FROM     activities
+where (ID = @customerID)";
             this._commandCollection[9].CommandType = global::System.Data.CommandType.Text;
-            this._commandCollection[9].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "customerID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[9].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@customerID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "ID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[10] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[10].Connection = this.Connection;
-            this._commandCollection[10].CommandText = "SELECT ID, description\r\nfrom activities\r\nwhere (parentID = @customerID)";
+            this._commandCollection[10].CommandText = "SELECT ID, description from activities\nwhere (customerID = @ID) and ParentID = 0";
             this._commandCollection[10].CommandType = global::System.Data.CommandType.Text;
-            this._commandCollection[10].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@customerID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "parentID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[10].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "customerID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[11] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[11].Connection = this.Connection;
-            this._commandCollection[11].CommandText = "SELECT type\r\nFROM     activities\r\nWhere (ID = @ID)";
+            this._commandCollection[11].CommandText = "SELECT ID, description\nfrom activities\nwhere (parentID = @customerID)";
             this._commandCollection[11].CommandType = global::System.Data.CommandType.Text;
-            this._commandCollection[11].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "ID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[11].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@customerID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "parentID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[12] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[12].Connection = this.Connection;
-            this._commandCollection[12].CommandText = "UPDATE activities \r\nSET startDate = null\r\nWHERE (ID = @ID)";
+            this._commandCollection[12].CommandText = "SELECT type\nFROM     activities\nWhere (ID = @ID)";
             this._commandCollection[12].CommandType = global::System.Data.CommandType.Text;
-            this._commandCollection[12].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "ID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._commandCollection[12].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "ID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[13] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[13].Connection = this.Connection;
-            this._commandCollection[13].CommandText = "UPDATE activities \r\nSET stopDate = null\r\nWHERE (ID = @ID)";
+            this._commandCollection[13].CommandText = "update activities \r\nset status = (status + 1)\r\nwhere (ParentID= @ID) And ((status" +
+                " % 2) = 0)";
             this._commandCollection[13].CommandType = global::System.Data.CommandType.Text;
-            this._commandCollection[13].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "ID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._commandCollection[13].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "parentID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._commandCollection[14] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[14].Connection = this.Connection;
+            this._commandCollection[14].CommandText = "update activities\r\nset status = (status - 1)\r\nwhere (ParentID= @ID) And ((status " +
+                "% 2) = 1)";
+            this._commandCollection[14].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[14].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "parentID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._commandCollection[15] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[15].Connection = this.Connection;
+            this._commandCollection[15].CommandText = "UPDATE activities \nSET startDate = null\n WHERE (ID = @ID)";
+            this._commandCollection[15].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[15].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "ID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._commandCollection[16] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[16].Connection = this.Connection;
+            this._commandCollection[16].CommandText = "UPDATE activities \nSET stopDate = null\n WHERE (ID = @ID)";
+            this._commandCollection[16].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[16].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "ID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -5930,7 +5946,7 @@ where (ID = @customerID)";
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
         public virtual DsCustomer.activitiesDataTable GetMaxActivitiesID() {
-            this.Adapter.SelectCommand = this.CommandCollection[6];
+            this.Adapter.SelectCommand = this.CommandCollection[7];
             DsCustomer.activitiesDataTable dataTable = new DsCustomer.activitiesDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
@@ -5941,18 +5957,6 @@ where (ID = @customerID)";
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
         public virtual DsCustomer.activitiesDataTable GetParentIDProjectAndActivityByID(int customerID) {
-            this.Adapter.SelectCommand = this.CommandCollection[7];
-            this.Adapter.SelectCommand.Parameters[0].Value = ((int)(customerID));
-            DsCustomer.activitiesDataTable dataTable = new DsCustomer.activitiesDataTable();
-            this.Adapter.Fill(dataTable);
-            return dataTable;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
-        public virtual DsCustomer.activitiesDataTable GetProjectInfoByID(int customerID) {
             this.Adapter.SelectCommand = this.CommandCollection[8];
             this.Adapter.SelectCommand.Parameters[0].Value = ((int)(customerID));
             DsCustomer.activitiesDataTable dataTable = new DsCustomer.activitiesDataTable();
@@ -5964,8 +5968,20 @@ where (ID = @customerID)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
-        public virtual DsCustomer.activitiesDataTable GetProjectNameByID(global::System.Nullable<int> ID) {
+        public virtual DsCustomer.activitiesDataTable GetProjectInfoByID(int customerID) {
             this.Adapter.SelectCommand = this.CommandCollection[9];
+            this.Adapter.SelectCommand.Parameters[0].Value = ((int)(customerID));
+            DsCustomer.activitiesDataTable dataTable = new DsCustomer.activitiesDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual DsCustomer.activitiesDataTable GetProjectNameByID(global::System.Nullable<int> ID) {
+            this.Adapter.SelectCommand = this.CommandCollection[10];
             if ((ID.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[0].Value = ((int)(ID.Value));
             }
@@ -5982,7 +5998,7 @@ where (ID = @customerID)";
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
         public virtual DsCustomer.activitiesDataTable GetProjectNameByParentIDCustomerID(global::System.Nullable<int> customerID) {
-            this.Adapter.SelectCommand = this.CommandCollection[10];
+            this.Adapter.SelectCommand = this.CommandCollection[11];
             if ((customerID.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[0].Value = ((int)(customerID.Value));
             }
@@ -5999,7 +6015,7 @@ where (ID = @customerID)";
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
         public virtual DsCustomer.activitiesDataTable GetTypByID(int ID) {
-            this.Adapter.SelectCommand = this.CommandCollection[11];
+            this.Adapter.SelectCommand = this.CommandCollection[12];
             this.Adapter.SelectCommand.Parameters[0].Value = ((int)(ID));
             DsCustomer.activitiesDataTable dataTable = new DsCustomer.activitiesDataTable();
             this.Adapter.Fill(dataTable);
@@ -6947,9 +6963,101 @@ where (ID = @customerID)";
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual global::System.Nullable<int> GetCountOnParentID(global::System.Nullable<int> ID) {
+            global::System.Data.SqlClient.SqlCommand command = this.CommandCollection[6];
+            if ((ID.HasValue == true)) {
+                command.Parameters[0].Value = ((int)(ID.Value));
+            }
+            else {
+                command.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                command.Connection.Open();
+            }
+            object returnValue;
+            try {
+                returnValue = command.ExecuteScalar();
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    command.Connection.Close();
+                }
+            }
+            if (((returnValue == null) 
+                        || (returnValue.GetType() == typeof(global::System.DBNull)))) {
+                return new global::System.Nullable<int>();
+            }
+            else {
+                return new global::System.Nullable<int>(((int)(returnValue)));
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, false)]
+        public virtual int UpdateChildrenStatusActive(global::System.Nullable<int> ID) {
+            global::System.Data.SqlClient.SqlCommand command = this.CommandCollection[13];
+            if ((ID.HasValue == true)) {
+                command.Parameters[0].Value = ((int)(ID.Value));
+            }
+            else {
+                command.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                command.Connection.Open();
+            }
+            int returnValue;
+            try {
+                returnValue = command.ExecuteNonQuery();
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    command.Connection.Close();
+                }
+            }
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, false)]
+        public virtual int UpdateChildrenStatusInActive(global::System.Nullable<int> ID) {
+            global::System.Data.SqlClient.SqlCommand command = this.CommandCollection[14];
+            if ((ID.HasValue == true)) {
+                command.Parameters[0].Value = ((int)(ID.Value));
+            }
+            else {
+                command.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                command.Connection.Open();
+            }
+            int returnValue;
+            try {
+                returnValue = command.ExecuteNonQuery();
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    command.Connection.Close();
+                }
+            }
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, false)]
         public virtual int UpdateStartDateByID(int ID) {
-            global::System.Data.SqlClient.SqlCommand command = this.CommandCollection[12];
+            global::System.Data.SqlClient.SqlCommand command = this.CommandCollection[15];
             command.Parameters[0].Value = ((int)(ID));
             global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
             if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -6973,7 +7081,7 @@ where (ID = @customerID)";
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, false)]
         public virtual int UpdateStopDateByID(int ID) {
-            global::System.Data.SqlClient.SqlCommand command = this.CommandCollection[13];
+            global::System.Data.SqlClient.SqlCommand command = this.CommandCollection[16];
             command.Parameters[0].Value = ((int)(ID));
             global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
             if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -7136,8 +7244,8 @@ where (ID = @customerID)";
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
             this._adapter.InsertCommand.CommandText = "INSERT INTO [contacts] ([firstName], [lastName], [customerID], [externalID]) VALU" +
-                "ES (@firstName, @lastName, @customerID, @externalID);\r\nSELECT ID, firstName, las" +
-                "tName, customerID, externalID FROM contacts WHERE (ID = SCOPE_IDENTITY())";
+                "ES (@firstName, @lastName, @customerID, @externalID);\nSELECT ID, firstName, last" +
+                "Name, customerID, externalID FROM contacts WHERE (ID = SCOPE_IDENTITY())";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@firstName", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "firstName", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@lastName", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "lastName", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -7177,8 +7285,8 @@ SELECT ID, firstName, lastName, customerID, externalID FROM contacts WHERE (ID =
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[4];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT ID, firstName, lastName, customerID, externalID\r\nFROM     contacts\r\nWHERE " +
-                "(customerID = @ID)";
+            this._commandCollection[0].CommandText = "SELECT ID, firstName, lastName, customerID, externalID\nFROM     contacts\nWHERE (c" +
+                "ustomerID = @ID)";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "customerID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
@@ -7189,13 +7297,13 @@ SELECT ID, firstName, lastName, customerID, externalID FROM contacts WHERE (ID =
             this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "ID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[2] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[2].Connection = this.Connection;
-            this._commandCollection[2].CommandText = "SELECT ID, (firstName + \' \' + lastName) AS Name\r\n FROM contacts\r\n WHERE (customer" +
-                "ID = @ID)\r\norder by Name ";
+            this._commandCollection[2].CommandText = "SELECT ID, (firstName + \' \' + lastName) AS Name\n FROM contacts\n WHERE (customerID" +
+                " = @ID)\norder by Name ";
             this._commandCollection[2].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "customerID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[3] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[3].Connection = this.Connection;
-            this._commandCollection[3].CommandText = "select max(customerID) from contacts\r\n";
+            this._commandCollection[3].CommandText = "select max(customerID) from contacts\n";
             this._commandCollection[3].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -7676,43 +7784,43 @@ SELECT ID, firstName, lastName, username, email, createDate, status, department 
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[7];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "select * from\r\nusers AS U WHERE (ID IN (SELECT UG.userID FROM userGroup AS UG INN" +
-                "ER JOIN groups AS G ON UG.groupID = G.ID WHERE (G.status & 4 > 0)))";
+            this._commandCollection[0].CommandText = "select * from\nusers AS U WHERE (ID IN (SELECT UG.userID FROM userGroup AS UG INNE" +
+                "R JOIN groups AS G ON UG.groupID = G.ID WHERE (G.status & 4 > 0)))";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[1].Connection = this.Connection;
-            this._commandCollection[1].CommandText = "select ID, (firstName + \' \' + lastName) AS Name from users\r\n\r\nWHERE users.ID NOT " +
-                "\r\nin (\r\n    SELECT activityUsers.userID\r\n    FROM activityUsers\r\n    WHERE activ" +
-                "ityUsers.activityID = @ID\r\n\t) and users.status != 0\r\nOrder by Name";
+            this._commandCollection[1].CommandText = "select ID, (firstName + \' \' + lastName) AS Name from users\n\nWHERE users.ID NOT \ni" +
+                "n (\n    SELECT activityUsers.userID\n    FROM activityUsers\n    WHERE activityUse" +
+                "rs.activityID = @ID\n\t) and users.status != 0\nOrder by Name";
             this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[2] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[2].Connection = this.Connection;
-            this._commandCollection[2].CommandText = "select users.ID,users.firstName + \',\' + lastName as fullName from users\r\nOrder by" +
-                " lastName ASC";
+            this._commandCollection[2].CommandText = "select users.ID,users.firstName + \',\' + lastName as fullName from users\nOrder by " +
+                "lastName ASC";
             this._commandCollection[2].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[3] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[3].Connection = this.Connection;
-            this._commandCollection[3].CommandText = "select users.ID,users.firstName + \',\' + lastName as fullName from users\r\njoin use" +
-                "rGroup\r\non users.ID = userGroup.userID\r\njoin groups \r\non userGroup.groupID = gro" +
-                "ups.ID\r\nwhere groups.status = 4";
+            this._commandCollection[3].CommandText = "select users.ID,users.firstName + \',\' + lastName as fullName from users\njoin user" +
+                "Group\non users.ID = userGroup.userID\njoin groups \non userGroup.groupID = groups." +
+                "ID\nwhere groups.status = 4";
             this._commandCollection[3].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[4] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[4].Connection = this.Connection;
-            this._commandCollection[4].CommandText = "select ID,  (firstName + \' \' + lastName) AS Name from users \r\n\r\njoin activityUser" +
-                "s\r\non users.ID = activityUsers.userID\r\nwhere (activityID = @ID)\r\nOrder by firstN" +
-                "ame ASC";
+            this._commandCollection[4].CommandText = "select ID,  (firstName + \' \' + lastName) AS Name from users \n\njoin activityUsers\n" +
+                "on users.ID = activityUsers.userID\nwhere (activityID = @ID)\nOrder by firstName A" +
+                "SC";
             this._commandCollection[4].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[4].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "activityID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[5] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[5].Connection = this.Connection;
-            this._commandCollection[5].CommandText = "select department from users\r\nwhere (username = @username)";
+            this._commandCollection[5].CommandText = "select department from users\nwhere (username = @username)";
             this._commandCollection[5].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[5].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@username", global::System.Data.SqlDbType.NVarChar, 50, global::System.Data.ParameterDirection.Input, 0, 0, "username", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[6] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[6].Connection = this.Connection;
-            this._commandCollection[6].CommandText = "select (firstName + \' \' + lastName) AS firstName from Users\r\nwhere (ID = @Changeb" +
-                "yID)";
+            this._commandCollection[6].CommandText = "select (firstName + \' \' + lastName) AS firstName from Users\nwhere (ID = @Changeby" +
+                "ID)";
             this._commandCollection[6].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[6].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ChangebyID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "ID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
@@ -8317,23 +8425,23 @@ SELECT id, activityID, invoiceCode, description, budgetHours, estimatedHours, st
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT id, activityID, invoiceCode, description, budgetHours, estimatedHours, sta" +
-                "tus\r\nFROM     tasks";
+                "tus\nFROM     tasks";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[1].Connection = this.Connection;
-            this._commandCollection[1].CommandText = "SELECT id\r\nFROM     tasks\r\nwhere (activityID = @activityID)";
+            this._commandCollection[1].CommandText = "SELECT id\nFROM     tasks\nwhere (activityID = @activityID)";
             this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@activityID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "activityID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[2] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[2].Connection = this.Connection;
-            this._commandCollection[2].CommandText = "SELECT invoiceCode, description, budgetHours, estimatedHours, status\r\nFROM     ta" +
-                "sks\r\nwhere (id =@ID)";
+            this._commandCollection[2].CommandText = "SELECT invoiceCode, description, budgetHours, estimatedHours, status\nFROM     tas" +
+                "ks\nwhere (id =@ID)";
             this._commandCollection[2].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "id", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[3] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[3].Connection = this.Connection;
             this._commandCollection[3].CommandText = "SELECT id, activityID, invoiceCode, description, budgetHours, estimatedHours, sta" +
-                "tus\r\nFROM     tasks\r\nwhere (activityID = @acticityID)";
+                "tus\nFROM     tasks\nwhere (activityID = @acticityID)";
             this._commandCollection[3].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@acticityID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "activityID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
@@ -8847,12 +8955,12 @@ SELECT userID, activityID, status, priority, resourcePercentage FROM activityUse
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[2];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT userID, activityID, status, priority, resourcePercentage\r\nFROM     activit" +
-                "yUsers";
+            this._commandCollection[0].CommandText = "SELECT userID, activityID, status, priority, resourcePercentage\nFROM     activity" +
+                "Users";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[1].Connection = this.Connection;
-            this._commandCollection[1].CommandText = "SELECT userID, activityID, status\r\nFROM     activityUsers";
+            this._commandCollection[1].CommandText = "SELECT userID, activityID, status\nFROM     activityUsers";
             this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
         }
         
