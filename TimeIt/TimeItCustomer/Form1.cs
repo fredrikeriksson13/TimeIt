@@ -368,7 +368,7 @@ namespace TimeItCustomer
             chkProjecktOkToTidredovisa.Checked = true;
             treeViewProjects.SelectedNode = null;
 
-            gbTaskCounter.Visible = false;
+            gbTaskCounter.Visible = true;
             EnableDisableProjectControls(true);
             comboBoxProjectPriceStatus.SelectedIndex = 0;
             comboBoxProjectType.SelectedValue = projectType.uppdrag;
@@ -462,7 +462,7 @@ namespace TimeItCustomer
                 ActivitiesTable.Dispose();
 
 
-                if (treeViewProjects.SelectedNode != null && !projectRow.parentID.Equals(0) && projectRow.type.Equals((int)projectType.aktivitet))
+                if (treeViewProjects.SelectedNode != null && projectRow.type.Equals((int)projectType.uppdrag) || projectRow.type.Equals((int)projectType.aktivitet))
                 {
                     gbTaskCounter.Visible = true;
                     taskAdapter = new tasksTableAdapter();
